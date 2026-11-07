@@ -22,7 +22,7 @@ jobs:
           import zipfile
           from pathlib import Path
 
-          archive = Path("website-preview-source.zip")
+          archive = Path("website-preview-source-1.zip")
 
           if not archive.is_file():
               raise SystemExit("ZIP file not found")
