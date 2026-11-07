@@ -1,0 +1,15 @@
+# Never commit real portal artifacts or credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.sql
+*.sqlite
+*.log
+*.zip
+.DS_Store
+node_modules/
+vendor/
+__pycache__/
+.cache/

@@ -1,0 +1,9 @@
+[build]
+  publish = "site"
+  command = "echo Static preview"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Robots-Tag = "noindex, nofollow"

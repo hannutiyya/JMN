@@ -1,0 +1,2452 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Training Manual — Sham MediaOS 2.3.2</title><link rel="stylesheet" href="../book.css"><style>:root{--accent:#B45309}</style></head><body><div class="topbar"><a href="../index.html">Sham MediaOS library</a><b>Vol. 8</b><span>Training Manual</span><a href="#toc" style="margin-left:auto">Contents</a></div><div class="page-wrap"><section class="cover" style="--accent:#B45309"><div class="top"></div><div class="stripe"></div>
+<div class="brand"><b>S</b>Sham MediaOS</div>
+<div class="vno">Volume<b>08</b>of 11</div>
+<div class="kicker">Courses, exercises and quizzes</div><div class="vtitle">Training Manual</div>
+<div class="vsub">A complete training programme: learning paths for every role, a five-day course plan, 24 modules with objectives, demonstrations, hands-on exercises, quizzes and answers, trainer notes and certification checklists.</div>
+<div class="shotwrap"><img src="../img/nr-newsroom-articles-id.webp" alt=""></div>
+<div class="foot"><div><div class="ed">Version 2.3.2 · November 2026</div>For trainers, new staff and team leads</div><div style="text-align:right">Sham Software Systems Development General Trading PLC<br>sham.et</div></div></section><section class="front" id="front"><h1>Training Manual</h1>
+<p class="lead">A complete training programme: learning paths for every role, a five-day course plan, 24 modules with objectives, demonstrations, hands-on exercises, quizzes and answers, trainer notes and certification checklists.</p>
+<h2>About this volume</h2>
+<div class="kv"><dt>Product</dt><dd>Sham MediaOS 2.3.2 (newsroom, website, apps, broadcast) and the sham.et portal 1.1.2</dd>
+<dt>Volume</dt><dd>8 of 11 · Training Manual</dd><dt>Written for</dt><dd>trainers, new staff and team leads</dd>
+<dt>Edition</dt><dd>November 2026. This edition describes the software exactly as shipped in version 2.3.2.</dd>
+<dt>Publisher</dt><dd>Sham Software Systems Development General Trading PLC, Addis Ababa, Ethiopia</dd></div>
+<h2>How to read this book</h2>
+<div class="convention">
+<div class="admonition note"><p class="admonition-title">Note</p><p>Background that helps you understand what the system is doing.</p></div>
+<div class="admonition tip"><p class="admonition-title">Tip</p><p>A faster or better way to do something.</p></div>
+<div class="admonition warning"><p class="admonition-title">Important</p><p>Something that can cost you work, money or trust if you skip it.</p></div>
+<div class="admonition danger"><p class="admonition-title">Danger</p><p>A step that cannot be undone, or that can expose data.</p></div>
+<div class="admonition role"><p class="admonition-title">Who can do this</p><p>The roles or permissions a task needs.</p></div>
+<div class="admonition steps"><p class="admonition-title">Steps</p><ol><li>Numbered steps are done in order.</li></ol></div>
+</div>
+<p>Text in <code>monospace</code> is something you type or see exactly. <b>Bold</b> names a button, field or menu. Blue links jump to another place in this book; in the PDF they are clickable, and so is every line of the contents and the index. Screenshots show the example outlet <b>Horn Daily</b> in green; your system shows your own name, logo, colour and languages.</p>
+<h2>The library</h2>
+<table><thead><tr><th>Vol.</th><th>Title</th><th>For</th></tr></thead><tbody><tr><td><b>01</b></td><td><b>Product Bible</b></td><td>buyers, owners, managers and everyone new to the product</td></tr><tr><td><b>02</b></td><td><b>Reader Guide</b></td><td>readers, help-desk staff and audience teams</td></tr><tr><td><b>03</b></td><td><b>Newsroom User Manual</b></td><td>reporters, editors and newsroom staff</td></tr><tr><td><b>04</b></td><td><b>Advanced User Manual</b></td><td>senior editors, producers, audience and commercial leads</td></tr><tr><td><b>05</b></td><td><b>Administrator Manual</b></td><td>system administrators and technical owners</td></tr><tr><td><b>06</b></td><td><b>Installation and Operations Manual</b></td><td>IT, hosting and operations staff</td></tr><tr><td><b>07</b></td><td><b>Advanced Technical Manual</b></td><td>developers, integrators, architects and security reviewers</td></tr><tr><td><b>08</b></td><td><b>Training Manual</b></td><td>trainers, new staff and team leads</td></tr><tr><td><b>09</b></td><td><b>FAQ and Troubleshooting</b></td><td>everyone, and the help desk</td></tr><tr><td><b>10</b></td><td><b>sham.et Store and Licensing Manual</b></td><td>customers buying licences and Sham operators</td></tr><tr><td><b>11</b></td><td><b>Commercial and Legal Pack</b></td><td>buyers, procurement, legal and sales teams</td></tr></tbody></table>
+<div class="imprint"><p>© 2026 Sham Software Systems Development General Trading PLC. All rights reserved. This documentation is supplied to licensed customers of Sham MediaOS and may be copied for their internal training and use. Product names of third parties (for example Stripe, Google Play, the App Store, Microsoft Store, LiveKit, Jitsi, Cloudflare) belong to their owners and are used only to describe how Sham MediaOS works with them. Features marked as optional need a separate account with that provider; Sham MediaOS does not include those services.</p></div>
+</section><nav class="toc" id="toc"><h1>Contents</h1><div class="tp">Part 1 · The programme</div><a class="l1" href="#c1"><span class="t"><span class=n>1</span>The training programme</span><span class="d"></span><span class="pg" data-t="c1"></span></a><a class="l2" href="#c1-how-the-training-works"><span class="t">1.1&nbsp; How the training works</span><span class="d"></span><span class="pg" data-t="c1-how-the-training-works"></span></a><a class="l2" href="#c1-learning-paths"><span class="t">1.2&nbsp; Learning paths</span><span class="d"></span><span class="pg" data-t="c1-learning-paths"></span></a><a class="l2" href="#c1-five-day-roll-out-course"><span class="t">1.3&nbsp; Five-day roll-out course</span><span class="d"></span><span class="pg" data-t="c1-five-day-roll-out-course"></span></a><a class="l2" href="#c1-preparing-a-session"><span class="t">1.4&nbsp; Preparing a session</span><span class="d"></span><span class="pg" data-t="c1-preparing-a-session"></span></a><a class="l2" href="#c1-trainer-notes"><span class="t">1.5&nbsp; Trainer notes</span><span class="d"></span><span class="pg" data-t="c1-trainer-notes"></span></a><a class="l2" href="#c1-quick-reference-card-the-newsroom-in-ten-moves"><span class="t">1.6&nbsp; Quick reference card: the newsroom in ten moves</span><span class="d"></span><span class="pg" data-t="c1-quick-reference-card-the-newsroom-in-ten-moves"></span></a><div class="tp">Part 2 · Course book</div><a class="l1" href="#c2"><span class="t"><span class=n>2</span>Quick start</span><span class="d"></span><span class="pg" data-t="c2"></span></a><a class="l2" href="#c2-who-this-is-for"><span class="t">2.1&nbsp; Who this is for</span><span class="d"></span><span class="pg" data-t="c2-who-this-is-for"></span></a><a class="l2" href="#c2-1-what-sham-mediaos-is"><span class="t">2.2&nbsp; What Sham MediaOS is</span><span class="d"></span><span class="pg" data-t="c2-1-what-sham-mediaos-is"></span></a><a class="l2" href="#c2-2-the-editions"><span class="t">2.3&nbsp; The editions</span><span class="d"></span><span class="pg" data-t="c2-2-the-editions"></span></a><a class="l2" href="#c2-3-install-in-one-command"><span class="t">2.4&nbsp; Install in one command</span><span class="d"></span><span class="pg" data-t="c2-3-install-in-one-command"></span></a><a class="l2" href="#c2-4-first-sign-in-with-two-factor-authentication"><span class="t">2.5&nbsp; First sign-in with two-factor authentication</span><span class="d"></span><span class="pg" data-t="c2-4-first-sign-in-with-two-factor-authentication"></span></a><a class="l2" href="#c2-5-set-your-brand"><span class="t">2.6&nbsp; Set your brand</span><span class="d"></span><span class="pg" data-t="c2-5-set-your-brand"></span></a><a class="l2" href="#c2-6-install-your-licence"><span class="t">2.7&nbsp; Install your licence</span><span class="d"></span><span class="pg" data-t="c2-6-install-your-licence"></span></a><a class="l2" href="#c2-7-publish-a-first-story"><span class="t">2.8&nbsp; Publish a first story</span><span class="d"></span><span class="pg" data-t="c2-7-publish-a-first-story"></span></a><a class="l2" href="#c2-8-where-to-go-next"><span class="t">2.9&nbsp; Where to go next</span><span class="d"></span><span class="pg" data-t="c2-8-where-to-go-next"></span></a><a class="l1" href="#c3"><span class="t"><span class=n>3</span>Task guides for every desk</span><span class="d"></span><span class="pg" data-t="c3"></span></a><a class="l2" href="#c3-your-account-and-your-day"><span class="t">3.1&nbsp; Your account and your day</span><span class="d"></span><span class="pg" data-t="c3-your-account-and-your-day"></span></a><a class="l2" href="#c3-planning-desk"><span class="t">3.2&nbsp; Planning desk</span><span class="d"></span><span class="pg" data-t="c3-planning-desk"></span></a><a class="l2" href="#c3-writing-desk"><span class="t">3.3&nbsp; Writing desk</span><span class="d"></span><span class="pg" data-t="c3-writing-desk"></span></a><a class="l2" href="#c3-editing-desk"><span class="t">3.4&nbsp; Editing desk</span><span class="d"></span><span class="pg" data-t="c3-editing-desk"></span></a><a class="l2" href="#c3-translation-desk"><span class="t">3.5&nbsp; Translation desk</span><span class="d"></span><span class="pg" data-t="c3-translation-desk"></span></a><a class="l2" href="#c3-media-desk"><span class="t">3.6&nbsp; Media desk</span><span class="d"></span><span class="pg" data-t="c3-media-desk"></span></a><a class="l2" href="#c3-breaking-and-live-desk"><span class="t">3.7&nbsp; Breaking and live desk</span><span class="d"></span><span class="pg" data-t="c3-breaking-and-live-desk"></span></a><a class="l2" href="#c3-audience-desk"><span class="t">3.8&nbsp; Audience desk</span><span class="d"></span><span class="pg" data-t="c3-audience-desk"></span></a><a class="l2" href="#c3-standards-desk"><span class="t">3.9&nbsp; Standards desk</span><span class="d"></span><span class="pg" data-t="c3-standards-desk"></span></a><a class="l2" href="#c3-field-work-the-reporter-app"><span class="t">3.10&nbsp; Field work: the Reporter app</span><span class="d"></span><span class="pg" data-t="c3-field-work-the-reporter-app"></span></a><div class="tp">Part 3 · Modules</div><a class="l1" href="#c4"><span class="t"><span class=n>4</span>Modules</span><span class="d"></span><span class="pg" data-t="c4"></span></a><a class="l2" href="#c4-module-1-welcome-to-sham-mediaos"><span class="t">4.1&nbsp; Module 1: Welcome to Sham MediaOS</span><span class="d"></span><span class="pg" data-t="c4-module-1-welcome-to-sham-mediaos"></span></a><a class="l2" href="#c4-module-2-signing-in-safely"><span class="t">4.2&nbsp; Module 2: Signing in safely</span><span class="d"></span><span class="pg" data-t="c4-module-2-signing-in-safely"></span></a><a class="l2" href="#c4-module-3-planning-and-assignments"><span class="t">4.3&nbsp; Module 3: Planning and assignments</span><span class="d"></span><span class="pg" data-t="c4-module-3-planning-and-assignments"></span></a><a class="l2" href="#c4-module-4-writing-in-story-studio"><span class="t">4.4&nbsp; Module 4: Writing in Story Studio</span><span class="d"></span><span class="pg" data-t="c4-module-4-writing-in-story-studio"></span></a><a class="l2" href="#c4-module-5-media-photos-audio-video-and-documents"><span class="t">4.5&nbsp; Module 5: Media: photos, audio, video and documents</span><span class="d"></span><span class="pg" data-t="c4-module-5-media-photos-audio-video-and-documents"></span></a><a class="l2" href="#c4-module-6-editing-approval-and-publishing"><span class="t">4.6&nbsp; Module 6: Editing, approval and publishing</span><span class="d"></span><span class="pg" data-t="c4-module-6-editing-approval-and-publishing"></span></a><a class="l2" href="#c4-module-7-updates-corrections-and-takedowns"><span class="t">4.7&nbsp; Module 7: Updates, corrections and takedowns</span><span class="d"></span><span class="pg" data-t="c4-module-7-updates-corrections-and-takedowns"></span></a><a class="l2" href="#c4-module-8-languages-translation-and-the-termbase"><span class="t">4.8&nbsp; Module 8: Languages, translation and the termbase</span><span class="d"></span><span class="pg" data-t="c4-module-8-languages-translation-and-the-termbase"></span></a><a class="l2" href="#c4-module-9-breaking-news-and-live-coverage"><span class="t">4.9&nbsp; Module 9: Breaking news and live coverage</span><span class="d"></span><span class="pg" data-t="c4-module-9-breaking-news-and-live-coverage"></span></a><a class="l2" href="#c4-module-10-front-pages-structure-and-seo"><span class="t">4.10&nbsp; Module 10: Front pages, structure and SEO</span><span class="d"></span><span class="pg" data-t="c4-module-10-front-pages-structure-and-seo"></span></a><a class="l2" href="#c4-module-11-newsletters-and-notifications"><span class="t">4.11&nbsp; Module 11: Newsletters and notifications</span><span class="d"></span><span class="pg" data-t="c4-module-11-newsletters-and-notifications"></span></a><a class="l2" href="#c4-module-12-social-video-and-podcasts"><span class="t">4.12&nbsp; Module 12: Social, video and podcasts</span><span class="d"></span><span class="pg" data-t="c4-module-12-social-video-and-podcasts"></span></a><a class="l2" href="#c4-module-13-audience-interaction-and-moderation"><span class="t">4.13&nbsp; Module 13: Audience interaction and moderation</span><span class="d"></span><span class="pg" data-t="c4-module-13-audience-interaction-and-moderation"></span></a><a class="l2" href="#c4-module-14-standards-complaints-and-fact-checks"><span class="t">4.14&nbsp; Module 14: Standards: complaints and fact-checks</span><span class="d"></span><span class="pg" data-t="c4-module-14-standards-complaints-and-fact-checks"></span></a><a class="l2" href="#c4-module-15-investigations-and-source-protection"><span class="t">4.15&nbsp; Module 15: Investigations and source protection</span><span class="d"></span><span class="pg" data-t="c4-module-15-investigations-and-source-protection"></span></a><a class="l2" href="#c4-module-16-elections"><span class="t">4.16&nbsp; Module 16: Elections</span><span class="d"></span><span class="pg" data-t="c4-module-16-elections"></span></a><a class="l2" href="#c4-module-17-broadcast-rundowns-and-studios"><span class="t">4.17&nbsp; Module 17: Broadcast: rundowns and studios</span><span class="d"></span><span class="pg" data-t="c4-module-17-broadcast-rundowns-and-studios"></span></a><a class="l2" href="#c4-module-18-revenue-and-advertising"><span class="t">4.18&nbsp; Module 18: Revenue and advertising</span><span class="d"></span><span class="pg" data-t="c4-module-18-revenue-and-advertising"></span></a><a class="l2" href="#c4-module-19-analytics"><span class="t">4.19&nbsp; Module 19: Analytics</span><span class="d"></span><span class="pg" data-t="c4-module-19-analytics"></span></a><a class="l2" href="#c4-module-20-the-reporter-app"><span class="t">4.20&nbsp; Module 20: The Reporter app</span><span class="d"></span><span class="pg" data-t="c4-module-20-the-reporter-app"></span></a><a class="l2" href="#c4-module-21-administration-people-and-roles"><span class="t">4.21&nbsp; Module 21: Administration: people and roles</span><span class="d"></span><span class="pg" data-t="c4-module-21-administration-people-and-roles"></span></a><a class="l2" href="#c4-module-22-administration-brand-editions-licence-and-integrations"><span class="t">4.22&nbsp; Module 22: Administration: brand, editions, licence and integrations</span><span class="d"></span><span class="pg" data-t="c4-module-22-administration-brand-editions-licence-and-integrations"></span></a><a class="l2" href="#c4-module-23-administration-security-audit-and-backups"><span class="t">4.23&nbsp; Module 23: Administration: security, audit and backups</span><span class="d"></span><span class="pg" data-t="c4-module-23-administration-security-audit-and-backups"></span></a><a class="l2" href="#c4-module-24-operations-install-update-and-recover"><span class="t">4.24&nbsp; Module 24: Operations: install, update and recover</span><span class="d"></span><span class="pg" data-t="c4-module-24-operations-install-update-and-recover"></span></a><div class="tp">Part 4 · Assessment</div><a class="l1" href="#c5"><span class="t"><span class=n>5</span>Answers, certification and forms</span><span class="d"></span><span class="pg" data-t="c5"></span></a><a class="l2" href="#c5-quiz-answers"><span class="t">5.1&nbsp; Quiz answers</span><span class="d"></span><span class="pg" data-t="c5-quiz-answers"></span></a><a class="l2" href="#c5-practical-certification-tasks"><span class="t">5.2&nbsp; Practical certification tasks</span><span class="d"></span><span class="pg" data-t="c5-practical-certification-tasks"></span></a><a class="l2" href="#c5-certificate"><span class="t">5.3&nbsp; Certificate</span><span class="d"></span><span class="pg" data-t="c5-certificate"></span></a><a class="l2" href="#c5-attendance-sheet"><span class="t">5.4&nbsp; Attendance sheet</span><span class="d"></span><span class="pg" data-t="c5-attendance-sheet"></span></a><a class="l2" href="#c5-training-evaluation-form"><span class="t">5.5&nbsp; Training evaluation form</span><span class="d"></span><span class="pg" data-t="c5-training-evaluation-form"></span></a><a class="l1" href="#bindex"><span class="t">Index</span><span class="d"></span><span class="pg" data-t="bindex"></span></a></nav><section class="part" id="p1"><div class="pbar"></div><div class="pnum">Part 1</div><h1>The programme</h1><div class="pdesc">How the training is organised and delivered.</div><div class="plist"><div><span>1</span>The training programme</div></div></section>
+<section class="chapter" id="c1"><header class="chap-open"><div class="chap-band"></div><div class="chap-num">Chapter 1</div><h1>The training programme</h1><div class=mini><a href="#c1-how-the-training-works">1.1&nbsp; How the training works<span class="pg" data-t="c1-how-the-training-works"></span></a><a href="#c1-learning-paths">1.2&nbsp; Learning paths<span class="pg" data-t="c1-learning-paths"></span></a><a href="#c1-five-day-roll-out-course">1.3&nbsp; Five-day roll-out course<span class="pg" data-t="c1-five-day-roll-out-course"></span></a><a href="#c1-preparing-a-session">1.4&nbsp; Preparing a session<span class="pg" data-t="c1-preparing-a-session"></span></a><a href="#c1-trainer-notes">1.5&nbsp; Trainer notes<span class="pg" data-t="c1-trainer-notes"></span></a><a href="#c1-quick-reference-card-the-newsroom-in-ten-moves">1.6&nbsp; Quick reference card: the newsroom in ten moves<span class="pg" data-t="c1-quick-reference-card-the-newsroom-in-ten-moves"></span></a></div></header><p>This manual turns the other volumes into a course. It is written for trainers (Sham trainers during a roll-out, or the outlet's own trainers later) and for people learning on their own. Each module has objectives, a demonstration, a hands-on exercise and a short quiz; answers are in the Assessment part.</p>
+<h2 id="c1-how-the-training-works"><span class="sn" style="color:var(--accent);margin-right:.45em">1.1</span>How the training works</h2>
+<ul>
+<li><strong>Learning paths</strong> pick the modules each role needs. Nobody needs all 24.</li>
+<li><strong>Modules</strong> take 45 minutes to 3 hours. Each is one demonstration and one exercise.</li>
+<li><strong>A training environment</strong> is a copy of the system with training editions and accounts, never the live site. Ask your administrator or Sham to set one up; the demo data seeded by the installer is ideal.</li>
+<li><strong>Quizzes</strong> check understanding. A trainee passes a module with four correct answers out of five.</li>
+<li><strong>Certification</strong>: a trainee who passes every module of their path and completes the practical task gets a certificate (form in the Assessment part).</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Never train on the live system</p>
+<p>Training exercises publish stories, send newsletters and push notifications. Use a training environment or training editions that readers cannot see.</p>
+</div>
+<h2 id="c1-learning-paths"><span class="sn" style="color:var(--accent);margin-right:.45em">1.2</span>Learning paths</h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Modules</th>
+<th style="text-align: right;">Total time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reporter</td>
+<td>1, 2, 3, 4, 5, 6, 7, 20</td>
+<td style="text-align: right;">8 h 30 min</td>
+</tr>
+<tr>
+<td>Editor and desk chief</td>
+<td>1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 14, 19</td>
+<td style="text-align: right;">13 h 00 min</td>
+</tr>
+<tr>
+<td>Translator</td>
+<td>1, 2, 4, 8</td>
+<td style="text-align: right;">4 h 15 min</td>
+</tr>
+<tr>
+<td>Audience, social and newsletter editor</td>
+<td>1, 2, 4, 11, 12, 13, 19</td>
+<td style="text-align: right;">7 h 15 min</td>
+</tr>
+<tr>
+<td>Standards and investigations</td>
+<td>1, 2, 7, 14, 15</td>
+<td style="text-align: right;">4 h 30 min</td>
+</tr>
+<tr>
+<td>Producer and presenter</td>
+<td>1, 2, 9, 12, 16, 17</td>
+<td style="text-align: right;">7 h 15 min</td>
+</tr>
+<tr>
+<td>Commercial staff</td>
+<td>1, 2, 18, 19</td>
+<td style="text-align: right;">3 h 15 min</td>
+</tr>
+<tr>
+<td>Administrator</td>
+<td>1, 2, 21, 22, 23</td>
+<td style="text-align: right;">6 h 00 min</td>
+</tr>
+<tr>
+<td>IT and hosting</td>
+<td>1, 2, 23, 24</td>
+<td style="text-align: right;">6 h 00 min</td>
+</tr>
+</tbody>
+</table>
+<h2 id="c1-five-day-roll-out-course"><span class="sn" style="color:var(--accent);margin-right:.45em">1.3</span>Five-day roll-out course</h2>
+<p>For a newsroom going live, Sham runs the following week. Days 1 and 2 are for everyone in groups by role; days 3 to 5 are for specialists.</p>
+<table>
+<thead>
+<tr>
+<th>Day</th>
+<th>Morning</th>
+<th>Afternoon</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Modules 1–3: welcome, signing in, planning</td>
+<td>Modules 4–5: Story Studio, media</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Modules 6–7: editing, corrections</td>
+<td>Modules 8–9: translation, breaking and live</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Modules 10–13: front pages, newsletters, social, moderation</td>
+<td>Modules 14–15: standards, investigations</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Modules 16–17: elections, broadcast (producers)</td>
+<td>Modules 18–19: revenue, analytics; module 20 Reporter app</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Modules 21–23: administration</td>
+<td>Module 24 (IT), certification tasks and go-live rehearsal</td>
+</tr>
+</tbody>
+</table>
+<h2 id="c1-preparing-a-session"><span class="sn" style="color:var(--accent);margin-right:.45em">1.4</span>Preparing a session</h2>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox" disabled/> Training environment is up, with training editions and demo stories.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> One training account per trainee, with the right role; two-step sign-in ready.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Projector or large screen; trainees have a computer and their phone.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Printed quick reference cards for the path.</li>
+<li class="task-list-item"><input type="checkbox" disabled/> Attendance sheet and quiz sheets printed.</li>
+</ul>
+<h2 id="c1-trainer-notes"><span class="sn" style="color:var(--accent);margin-right:.45em">1.5</span>Trainer notes</h2>
+<ul>
+<li>Start each module with <em>why</em>: the newsroom problem the feature solves.</li>
+<li>Demonstrate once, slowly, then let trainees do it. Walk the room.</li>
+<li>Use the outlet's real beats and sections in exercises; trainees learn faster with their own work.</li>
+<li>Collect questions you cannot answer and send them to Sham support; add answers to the FAQ.</li>
+<li>End with what changes on Monday: who does what, and where to get help.</li>
+</ul>
+<h2 id="c1-quick-reference-card-the-newsroom-in-ten-moves"><span class="sn" style="color:var(--accent);margin-right:.45em">1.6</span>Quick reference card: the newsroom in ten moves</h2>
+<table>
+<thead>
+<tr>
+<th>To…</th>
+<th>Go to…</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>See what is waiting for you</td>
+<td>My work</td>
+</tr>
+<tr>
+<td>Pitch a story</td>
+<td>Planning → New pitch</td>
+</tr>
+<tr>
+<td>Start writing</td>
+<td>New story (N)</td>
+</tr>
+<tr>
+<td>Add a photo</td>
+<td>Type /photo in Story Studio</td>
+</tr>
+<tr>
+<td>Check before submitting</td>
+<td>Readiness</td>
+</tr>
+<tr>
+<td>Submit</td>
+<td>Submit for review</td>
+</tr>
+<tr>
+<td>Publish or schedule</td>
+<td>Publish / Schedule (editors)</td>
+</tr>
+<tr>
+<td>Correct a published story</td>
+<td>Add correction</td>
+</tr>
+<tr>
+<td>Send a breaking alert</td>
+<td>Breaking → New alert</td>
+</tr>
+<tr>
+<td>Get help</td>
+<td>These manuals, your desk chief, your administrator</td>
+</tr>
+</tbody>
+</table></section>
+<section class="part" id="p2"><div class="pbar"></div><div class="pnum">Part 2</div><h1>Course book</h1><div class="pdesc">The reading for the newsroom modules.</div><div class="plist"><div><span>2</span>Quick start</div><div><span>3</span>Task guides for every desk</div></div></section>
+<section class="chapter" id="c2"><header class="chap-open"><div class="chap-band"></div><div class="chap-num">Chapter 2</div><h1>Quick start</h1><div class=mini><a href="#c2-who-this-is-for">2.1&nbsp; Who this is for<span class="pg" data-t="c2-who-this-is-for"></span></a><a href="#c2-1-what-sham-mediaos-is">2.2&nbsp; What Sham MediaOS is<span class="pg" data-t="c2-1-what-sham-mediaos-is"></span></a><a href="#c2-2-the-editions">2.3&nbsp; The editions<span class="pg" data-t="c2-2-the-editions"></span></a><a href="#c2-3-install-in-one-command">2.4&nbsp; Install in one command<span class="pg" data-t="c2-3-install-in-one-command"></span></a><a href="#c2-4-first-sign-in-with-two-factor-authentication">2.5&nbsp; First sign-in with two-factor authentication<span class="pg" data-t="c2-4-first-sign-in-with-two-factor-authentication"></span></a><a href="#c2-5-set-your-brand">2.6&nbsp; Set your brand<span class="pg" data-t="c2-5-set-your-brand"></span></a><a href="#c2-6-install-your-licence">2.7&nbsp; Install your licence<span class="pg" data-t="c2-6-install-your-licence"></span></a><a href="#c2-7-publish-a-first-story">2.8&nbsp; Publish a first story<span class="pg" data-t="c2-7-publish-a-first-story"></span></a><a href="#c2-8-where-to-go-next">2.9&nbsp; Where to go next<span class="pg" data-t="c2-8-where-to-go-next"></span></a></div></header><h2 id="c2-who-this-is-for"><span class="sn" style="color:var(--accent);margin-right:.45em">2.1</span>Who this is for</h2>
+<p>This guide is for the person who sets up Sham MediaOS for the first time at your outlet. You need a new Ubuntu 24.04
+server, root access and a domain name. You do not need to know the product yet. The whole path takes about one hour.</p>
+<p><strong>Contents</strong></p>
+<ol>
+<li>
+<p><a href="#c2-1-what-sham-mediaos-is">What Sham MediaOS is</a></p>
+</li>
+<li>
+<p><a href="#c2-2-the-editions">The editions</a></p>
+</li>
+<li>
+<p><a href="#c2-3-install-in-one-command">Install in one command</a></p>
+</li>
+<li>
+<p><a href="#c2-4-first-sign-in-with-two-factor-authentication">First sign-in with two-factor authentication</a></p>
+</li>
+<li>
+<p><a href="#c2-5-set-your-brand">Set your brand</a></p>
+</li>
+<li>
+<p><a href="#c2-6-install-your-licence">Install your licence</a></p>
+</li>
+<li>
+<p><a href="#c2-7-publish-a-first-story">Publish a first story</a></p>
+</li>
+<li>
+<p><a href="#c2-8-where-to-go-next">Where to go next</a></p>
+</li>
+</ol>
+<hr />
+<h2 id="c2-1-what-sham-mediaos-is"><span class="sn" style="color:var(--accent);margin-right:.45em">2.2</span>What Sham MediaOS is</h2>
+<p>Sham MediaOS is a newsroom and publishing platform. It is sold by Sham Software Systems Development General Trading
+PLC (<a href="https://sham.et">https://sham.et</a>, contact@sham.et). One installation gives your outlet:</p>
+<ul>
+<li>a <strong>newsroom</strong> where reporters write, editors review and stories are published, in several languages;</li>
+<li>a <strong>public website</strong> for readers, with one edition per language, that also works well on phones;</li>
+<li><strong>distribution</strong>: breaking alerts, newsletters, social posts, push alerts and a digital newspaper;</li>
+<li><strong>broadcast tools</strong> (in the editions that include them): rundowns, studios, programme guide, graphics and live
+  streaming;</li>
+<li><strong>mobile apps</strong> under your own name (in the editions that include them).</li>
+</ul>
+<p>Sham MediaOS shows <strong>your outlet's name</strong> everywhere: on the website, in the apps, in e-mails and in every interface
+language. You set the name once (see step 5).</p>
+<figure class="plain"><img src="../img/website-home.webp" alt="The public website of an outlet that runs Sham MediaOS"><figcaption>The public website of an outlet that runs Sham MediaOS</figcaption></figure>
+
+<p><em>The public website, as readers see it.</em></p>
+<h2 id="c2-2-the-editions"><span class="sn" style="color:var(--accent);margin-right:.45em">2.3</span>The editions</h2>
+<p>Sham MediaOS is sold in five editions. Each edition includes everything in the editions before it. You can upgrade
+at any time by installing a new licence key. You never need to reinstall.</p>
+<table>
+<thead>
+<tr>
+<th>Edition</th>
+<th>Editions (sites)</th>
+<th>Languages</th>
+<th>Staff</th>
+<th>Studios</th>
+<th>Adds</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Starter</strong></td>
+<td>1</td>
+<td>3</td>
+<td>5</td>
+<td>0</td>
+<td>Newsroom and CMS, website and PWA, newsletters, local payments, advertising</td>
+</tr>
+<tr>
+<td><strong>Professional</strong></td>
+<td>3</td>
+<td>10</td>
+<td>25</td>
+<td>0</td>
+<td>Memberships and paywall, branded mobile apps, AI desk, analytics, podcasts, elections and polls</td>
+</tr>
+<tr>
+<td><strong>Broadcast</strong></td>
+<td>5</td>
+<td>15</td>
+<td>75</td>
+<td>3</td>
+<td>Broadcast (rundowns, studios, schedule, graphics), live streaming and relays, Interaction Centre, syndication and Content Credentials</td>
+</tr>
+<tr>
+<td><strong>Enterprise</strong></td>
+<td>Unlimited</td>
+<td>Unlimited</td>
+<td>500</td>
+<td>20</td>
+<td>Single sign-on with Google Workspace, Microsoft Entra ID or SAML 2.0 (Okta, ADFS, Keycloak and others), several brands (an edition as its own publication), archive tiers and legal holds, audit export</td>
+</tr>
+<tr>
+<td><strong>Global</strong></td>
+<td>Unlimited</td>
+<td>Unlimited</td>
+<td>Unlimited</td>
+<td>Unlimited</td>
+<td>Several data centres</td>
+</tr>
+</tbody>
+</table>
+<p>A new installation without a licence key runs as a <strong>14-day trial of the Professional edition</strong>.</p>
+<p><strong>Prices</strong> are set by Sham. See the current prices at <strong>store.sham.et</strong>.</p>
+<h2 id="c2-3-install-in-one-command"><span class="sn" style="color:var(--accent);margin-right:.45em">2.4</span>Install in one command</h2>
+<p>Before you start:</p>
+<ol>
+<li>Get a fresh server with <strong>Ubuntu 24.04 LTS</strong> and root access. For a public launch, 8 vCPU, 16 GB RAM and
+   160 GB NVMe disk is recommended. See the Installation Guide <span class="pill k">see Installation and Operations Manual</span> for sizes.</li>
+<li>Point the DNS of your website host (for example <code>example.com</code>) and your API host (<code>api.example.com</code>) at the
+   server. The installer gets the HTTPS certificates itself, so DNS must already work.</li>
+<li>
+<p>Put the Sham MediaOS release on the server, for example in <code>/srv/jmn/app</code>, and change into that folder.</p>
+</li>
+<li>
+<p>Have your licence key ready if you already bought one. It starts with <code>LIC1.</code>. You can also add it later.</p>
+</li>
+</ol>
+<p>Then run this one command as root. Replace the example values with your own:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span><span class="nv">JMN_WEB_HOST</span><span class="o">=</span>example.com<span class="w"> </span><span class="se">\</span>
+<span class="w">     </span><span class="nv">JMN_ADMIN_EMAIL</span><span class="o">=</span>editor@example.com<span class="w"> </span><span class="se">\</span>
+<span class="w">     </span><span class="nv">JMN_ORG_NAME</span><span class="o">=</span><span class="s2">"Example Daily"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span><span class="nv">JMN_SHORT_NAME</span><span class="o">=</span>ED<span class="w"> </span><span class="se">\</span>
+<span class="w">     </span><span class="nv">JMN_ACCENT</span><span class="o">=</span><span class="s2">"#0a5c36"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span><span class="nv">JMN_LICENCE_KEY</span><span class="o">=</span>/root/licence.txt<span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>bash<span class="w"> </span>infra/install.sh
+</code></pre></div>
+<p>Only <code>JMN_WEB_HOST</code> and <code>JMN_ADMIN_EMAIL</code> are required. The script prepares and secures the server, installs Docker,
+creates every secret, builds and starts the platform, and runs a health check. When it ends, it prints:</p>
+<ul>
+<li>the website address, for example <code>https://example.com</code>;</li>
+<li>the newsroom address, for example <code>https://example.com/newsroom</code>;</li>
+<li>where the first administrator's password is: the file <code>/root/jmn-admin-password</code>.</li>
+</ul>
+<blockquote>
+<p>Technical names inside the product (commands, settings, folders) start with <code>jmn</code> or <code>JMN_</code>. This is normal.
+Readers never see these names.</p>
+</blockquote>
+<p>If the script stops with an error, fix the cause it prints and run the same command again. Re-running is safe.</p>
+<h2 id="c2-4-first-sign-in-with-two-factor-authentication"><span class="sn" style="color:var(--accent);margin-right:.45em">2.5</span>First sign-in with two-factor authentication</h2>
+<p>Administrator and editor roles must use two-factor authentication. You set it up at your first sign-in.</p>
+<ol>
+<li>On the server, read the password: <code>sudo cat /root/jmn-admin-password</code>.</li>
+<li>
+<p>Open <code>https://&lt;your web host&gt;/newsroom/login</code>.</p>
+</li>
+<li>
+<p>Enter your <strong>Work email</strong> and <strong>Password</strong>, then select <strong>Continue</strong>.</p>
+</li>
+<li>You are sent to <strong>Set up two-step verification</strong>. Scan the QR code with an authenticator app (for example
+   Google Authenticator, 1Password or Authy). You can also type the key by hand.</li>
+<li>
+<p>Enter the 6-digit code from the app.</p>
+</li>
+<li>
+<p><strong>Save your recovery codes.</strong> Use <strong>Copy codes</strong> or <strong>Download</strong>. They are shown only once.</p>
+</li>
+<li>Choose your own password: open <strong>My profile</strong> (People group), find <strong>Change your password</strong>, enter the
+   generated password and your new one, and select <strong>Change password</strong>. Keep it in a password manager.</li>
+<li>On the server, delete the password file: <code>sudo rm /root/jmn-admin-password</code>.</li>
+</ol>
+<p>From now on, you sign in with your password and a 6-digit code. If you lose your phone, use a recovery code.</p>
+<h2 id="c2-5-set-your-brand"><span class="sn" style="color:var(--accent);margin-right:.45em">2.6</span>Set your brand</h2>
+<p>If you gave your names to the installer, this is already done. To check or change it:</p>
+<ol>
+<li>In the newsroom, open <strong>Administration → Brand</strong>.</li>
+<li>Fill in <strong>Brand name</strong>, <strong>Short name</strong> (up to 12 characters, used for the logo mark, app icons and SMS),
+   <strong>Tagline</strong>, <strong>Legal name</strong>, <strong>Public contact e-mail</strong> and <strong>Brand colour</strong>.</li>
+<li>Select <strong>Save brand</strong>.</li>
+</ol>
+<p>The website, apps, e-mails and all interface languages show the new name within a minute.</p>
+<figure class="plain"><img src="../img/admin-brand.webp" alt="Administration, Brand page"><figcaption>Administration, Brand page</figcaption></figure>
+
+<p><em>Administration → Brand: your outlet's name, short name, tagline and colour.</em></p>
+<h2 id="c2-6-install-your-licence"><span class="sn" style="color:var(--accent);margin-right:.45em">2.7</span>Install your licence</h2>
+<p>To buy a licence:</p>
+<ol>
+<li>Go to <strong>store.sham.et</strong>.</li>
+<li>
+<p>Choose an edition and a term, and enter your domains.</p>
+</li>
+<li>
+<p>Pay on the payment provider's page, or ask for bank transfer details.</p>
+</li>
+<li>When the payment is confirmed, the store shows your key on the order page and e-mails it to you.</li>
+</ol>
+<figure class="plain"><img src="../img/store-home.webp" alt="The Sham MediaOS store"><figcaption>The Sham MediaOS store</figcaption></figure>
+
+<p><em>store.sham.et: choose an edition and a term.</em></p>
+<figure class="plain"><img src="../img/store-licence-ready.webp" alt="The order page with the licence key"><figcaption>The order page with the licence key</figcaption></figure>
+
+<p><em>The order page shows your licence key once the payment is confirmed.</em></p>
+<p>To install the key:</p>
+<ol>
+<li>Open <strong>Administration → Licence</strong>.</li>
+<li>
+<p>Paste the key into <strong>Licence key</strong>. It starts with <code>LIC1.</code>.</p>
+</li>
+<li>
+<p>Select <strong>Install licence</strong>.</p>
+</li>
+</ol>
+<p>The page shows your edition, the end date, your seats and limits, and the features you have.</p>
+<figure class="plain"><img src="../img/admin-licence.webp" alt="Administration, Licence page"><figcaption>Administration, Licence page</figcaption></figure>
+
+<p><em>Administration → Licence: status, edition, seats and the box to install a key.</em></p>
+<h2 id="c2-7-publish-a-first-story"><span class="sn" style="color:var(--accent);margin-right:.45em">2.8</span>Publish a first story</h2>
+<ol>
+<li>
+<p>In the newsroom, select <strong>New story</strong> (or press <code>N</code>).</p>
+</li>
+<li>
+<p>Write a <strong>Headline</strong>, a short <strong>Summary</strong> and the <strong>Body</strong>. A blank line starts a new paragraph.</p>
+</li>
+<li>
+<p>Choose the <strong>Edition</strong> (the language of the story) and the <strong>Story type</strong>, for example <strong>Article</strong>.</p>
+</li>
+<li>
+<p>Select <strong>Create draft</strong>. The full story editor opens.</p>
+</li>
+<li>
+<p>Open the <strong>Publish</strong> tab on the right. Fix every item under <strong>Ready to publish?</strong> that blocks publication.</p>
+</li>
+<li>
+<p>Under <strong>Workflow</strong>, move the story through the steps: <strong>Submit for review</strong>, then <strong>Start review</strong>, then
+   <strong>Approve</strong>, then <strong>Publish now</strong>. The first administrator is an Executive Administrator and may do every step.
+   In daily work, reporters submit and editors do the rest.</p>
+</li>
+<li>Select <strong>View live</strong> to see the story on the website.</li>
+</ol>
+<p>You have a working Sham MediaOS installation.</p>
+<h2 id="c2-8-where-to-go-next"><span class="sn" style="color:var(--accent);margin-right:.45em">2.9</span>Where to go next</h2>
+<table>
+<thead>
+<tr>
+<th>You want to</th>
+<th>Read</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Train reporters, editors and producers</td>
+<td>Newsroom Guide <span class="pill k">see Newsroom User Manual</span></td>
+</tr>
+<tr>
+<td>Add staff, editions, payments, backups and the go-live checklist</td>
+<td>Administrator Guide <span class="pill k">see Administrator Manual</span></td>
+</tr>
+<tr>
+<td>Install on Kubernetes, update, restore or move servers</td>
+<td>Installation Guide <span class="pill k">see Installation and Operations Manual</span></td>
+</tr>
+</tbody>
+</table>
+<p>Before you open the site to the public, work through <strong>Administration → Overview → Go-live checklist</strong> until no
+required item is open.</p></section>
+<section class="chapter" id="c3"><header class="chap-open"><div class="chap-band"></div><div class="chap-num">Chapter 3</div><h1>Task guides for every desk</h1><div class=mini><a href="#c3-your-account-and-your-day">3.1&nbsp; Your account and your day<span class="pg" data-t="c3-your-account-and-your-day"></span></a><a href="#c3-planning-desk">3.2&nbsp; Planning desk<span class="pg" data-t="c3-planning-desk"></span></a><a href="#c3-writing-desk">3.3&nbsp; Writing desk<span class="pg" data-t="c3-writing-desk"></span></a><a href="#c3-editing-desk">3.4&nbsp; Editing desk<span class="pg" data-t="c3-editing-desk"></span></a><a href="#c3-translation-desk">3.5&nbsp; Translation desk<span class="pg" data-t="c3-translation-desk"></span></a><a href="#c3-media-desk">3.6&nbsp; Media desk<span class="pg" data-t="c3-media-desk"></span></a><a href="#c3-breaking-and-live-desk">3.7&nbsp; Breaking and live desk<span class="pg" data-t="c3-breaking-and-live-desk"></span></a><a href="#c3-audience-desk">3.8&nbsp; Audience desk<span class="pg" data-t="c3-audience-desk"></span></a><a href="#c3-standards-desk">3.9&nbsp; Standards desk<span class="pg" data-t="c3-standards-desk"></span></a><a href="#c3-field-work-the-reporter-app">3.10&nbsp; Field work: the Reporter app<span class="pg" data-t="c3-field-work-the-reporter-app"></span></a></div></header><p>This chapter collects the tasks journalists do every day, desk by desk, as numbered steps. Each task names who may do it. If a button described here is missing on your screen, your role does not include that permission: ask your desk chief or administrator.</p>
+<h2 id="c3-your-account-and-your-day"><span class="sn" style="color:var(--accent);margin-right:.45em">3.1</span>Your account and your day</h2>
+<h3 id="c3-sign-in-for-the-first-time">Sign in for the first time</h3>
+<div class="admonition role">
+<p class="admonition-title">Who can do this</p>
+<p>Everyone with a staff account. Your administrator sends you an invitation e-mail.</p>
+</div>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open the invitation e-mail and select <strong>Set up your account</strong>. The link works once and expires after a few days.</li>
+<li>Choose a password of at least 12 characters. A sentence you can remember is better than a short word with symbols.</li>
+<li>If your role needs two-step sign-in, install an authenticator app on your phone (for example Google Authenticator, Microsoft Authenticator, 2FAS or Aegis), scan the code on the screen and type the six-digit code it shows.</li>
+<li>Save the <strong>recovery codes</strong> in a safe place. Each code can be used once if you lose your phone.</li>
+<li>You arrive at the <strong>Command centre</strong>.</li>
+</ol>
+</div>
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>https://newsroom.horndaily.example/newsroom/login</span></div><img src="../img/nr-login.webp" alt="The newsroom sign-in page" loading="lazy"></div><figcaption>The newsroom sign-in page</figcaption></figure>
+
+<h3 id="c3-add-a-passkey-so-you-can-sign-in-without-a-password">Add a passkey so you can sign in without a password</h3>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open <strong>My profile and security</strong> (your name at the bottom of the menu).</li>
+<li>In <strong>Passkeys</strong>, select <strong>Add a passkey</strong>. If you signed in more than 15 minutes ago, you are asked to sign in again first.</li>
+<li>Follow your device's prompt: fingerprint, face or the device PIN.</li>
+<li>Next time, choose <strong>Sign in with a passkey</strong> on the sign-in page.</li>
+</ol>
+</div>
+<h3 id="c3-plan-your-day-with-my-work">Plan your day with My work</h3>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open <strong>My work</strong>.</li>
+<li>Deal with <strong>Queries</strong> first: editors are waiting for your answer.</li>
+<li>Then <strong>Reviews</strong> if you are an editor, oldest first.</li>
+<li>Then your <strong>Stories</strong> in order of deadline.</li>
+<li>Mark tasks done as you finish them; the person who set them is told.</li>
+</ol>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Keyboard</p>
+<p><code>G</code> then <code>M</code> opens My work, <code>G</code> then <code>P</code> opens Planning and <code>N</code> starts a new story. <code>Ctrl+K</code> (or <code>Cmd+K</code> on a Mac) opens the command palette to search and jump anywhere.</p>
+</div>
+<h2 id="c3-planning-desk"><span class="sn" style="color:var(--accent);margin-right:.45em">3.2</span>Planning desk</h2>
+<h3 id="c3-pitch-a-story">Pitch a story</h3>
+<div class="admonition role">
+<p class="admonition-title">Who can do this</p>
+<p>Reporters and editors.</p>
+</div>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open <strong>Planning</strong> and select <strong>New pitch</strong>.</li>
+<li>Write a working title and two or three sentences on the angle: what is new, why now, who is affected.</li>
+<li>Choose the <strong>desk</strong> and the <strong>edition</strong> (or several editions).</li>
+<li>Add sources you plan to use and the media you expect (photos, video, data).</li>
+<li>Select <strong>Save pitch</strong>. Your desk chief sees it on the board.</li>
+</ol>
+</div>
+<h3 id="c3-assign-a-story">Assign a story</h3>
+<div class="admonition role">
+<p class="admonition-title">Who can do this</p>
+<p>Desk chiefs and editors with the planning permission.</p>
+</div>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open the pitch on the <strong>Planning</strong> board.</li>
+<li>Choose the <strong>owner</strong> and, if needed, a photographer or video journalist.</li>
+<li>Set the <strong>deadline</strong> and the <strong>target publication time</strong>.</li>
+<li>Select <strong>Assign</strong>. The reporter is notified and the story appears in their My work.</li>
+</ol>
+</div>
+<h3 id="c3-put-an-event-in-the-calendar">Put an event in the calendar</h3>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open <strong>Calendar</strong> and select the day.</li>
+<li>Select <strong>New event</strong>, give a title, time, place and the desk that covers it.</li>
+<li>Link a pitch if one exists, so the coverage plan and the event stay together.</li>
+</ol>
+</div>
+<h2 id="c3-writing-desk"><span class="sn" style="color:var(--accent);margin-right:.45em">3.3</span>Writing desk</h2>
+<h3 id="c3-write-a-story">Write a story</h3>
+<div class="admonition role">
+<p class="admonition-title">Who can do this</p>
+<p>Reporters and editors.</p>
+</div>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Select <strong>New story</strong>, or <strong>Start story</strong> on an assigned pitch.</li>
+<li>Choose the edition and the type of story.</li>
+<li>Write the <strong>headline</strong> (the readiness check warns when it is too long for search results) and the <strong>summary</strong> (one or two sentences shown under the headline and in sharing cards).</li>
+<li>Write the body. Press Enter for a new paragraph; type <code>/</code> to insert a block: heading, photo, gallery, video, audio, quote, fact box, timeline, embed or related link.</li>
+<li>Open <strong>Settings</strong> and choose the section, tags, byline and location.</li>
+<li>Add a main image with a <strong>caption</strong>, a <strong>credit</strong> and <strong>alternative text</strong> that describes the picture for people who cannot see it.</li>
+<li>The story saves itself every few seconds. <strong>Saved</strong> at the top confirms it.</li>
+</ol>
+</div>
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>/newsroom/articles/…</span></div><img src="../img/nr-newsroom-articles-id.webp" alt="A story open in Story Studio" loading="lazy"></div><figcaption>A story open in Story Studio</figcaption></figure>
+
+<h3 id="c3-add-a-photo-from-the-media-library">Add a photo from the media library</h3>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>In Story Studio, put the cursor where the photo should go and type <code>/photo</code>.</li>
+<li>Search the library, or select <strong>Upload</strong> to add a new file.</li>
+<li>Pick the photo. Check the caption and credit; change the caption for this story if needed (the library caption stays unchanged).</li>
+<li>Drag the <strong>focal point</strong> to the subject's face so crops in lists and on phones keep it.</li>
+</ol>
+</div>
+<h3 id="c3-embed-a-social-media-post-or-a-map">Embed a social media post or a map</h3>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Copy the address of the post or map.</li>
+<li>Type <code>/embed</code> in Story Studio and paste the address.</li>
+<li>Check the preview. Some platforms load their content only when the reader agrees to it; the page explains this to readers.</li>
+</ol>
+</div>
+<h3 id="c3-submit-your-story-for-review">Submit your story for review</h3>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open <strong>Readiness</strong> in the side panel. Fix every red item; yellow items are advice.</li>
+<li>Select <strong>Submit for review</strong>. Add a note for the editor if there is anything they must know (an embargo, a legal concern, a source to protect).</li>
+<li>The story is locked for you while an editor works on it. You are notified of queries and of publication.</li>
+</ol>
+</div>
+<h3 id="c3-answer-an-editors-query">Answer an editor's query</h3>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open the story from <strong>My work → Queries</strong>. The query is highlighted next to the paragraph it concerns.</li>
+<li>Change the text, or answer in the query thread.</li>
+<li>Select <strong>Resolve</strong> when the question is settled.</li>
+</ol>
+</div>
+<h2 id="c3-editing-desk"><span class="sn" style="color:var(--accent);margin-right:.45em">3.4</span>Editing desk</h2>
+<h3 id="c3-edit-and-publish-a-story">Edit and publish a story</h3>
+<div class="admonition role">
+<p class="admonition-title">Who can do this</p>
+<p>Editors with the publish permission for that desk and edition.</p>
+</div>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open <strong>My work → Reviews</strong>, or the <strong>Stories</strong> list filtered by <em>Submitted</em>.</li>
+<li>Select <strong>Start editing</strong>. The reporter can no longer change the text until you return it or publish.</li>
+<li>Edit the text. Use <strong>Track changes</strong> to show the reporter what you changed, or <strong>Compare</strong> to see versions side by side.</li>
+<li>Raise a <strong>query</strong> on any paragraph you cannot fix yourself.</li>
+<li>Check the readiness list, the headline and the main image.</li>
+<li>If an approval chain applies (for example legal review), select <strong>Send for approval</strong>; otherwise choose <strong>Publish now</strong> or <strong>Schedule</strong> with a date and time.</li>
+</ol>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Approval chains</p>
+<p>When your outlet has set an approval chain for this kind of story, the Publish button stays disabled until every required approver has approved. You cannot approve your own story.</p>
+</div>
+<h3 id="c3-return-a-story-to-the-reporter">Return a story to the reporter</h3>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Select <strong>Return to reporter</strong>.</li>
+<li>Write what needs to change.</li>
+<li>The story goes back to the reporter's My work with your note.</li>
+</ol>
+</div>
+<h3 id="c3-schedule-a-story">Schedule a story</h3>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Select <strong>Schedule</strong>.</li>
+<li>Choose the date and time. The time is in the edition's time zone, shown next to the field.</li>
+<li>Confirm. The story appears in <strong>Scheduled</strong> and is published automatically, even if nobody is signed in.</li>
+</ol>
+</div>
+<h3 id="c3-publish-an-update">Publish an update</h3>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open the published story and select <strong>Edit published story</strong>.</li>
+<li>Change the text.</li>
+<li>Choose <strong>Update</strong> and write a short update note for readers (for example <em>Updated with the minister's statement</em>).</li>
+<li>Select <strong>Publish update</strong>. The time of the last update is shown to readers.</li>
+</ol>
+</div>
+<h3 id="c3-publish-a-correction">Publish a correction</h3>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open the published story and select <strong>Add correction</strong>.</li>
+<li>Fix the error in the text.</li>
+<li>Write the correction note: what was wrong and what is right. Do not repeat a defamatory claim.</li>
+<li>Select <strong>Publish correction</strong>. The note appears on the story and in the public corrections log, and webhooks and partners are told.</li>
+</ol>
+</div>
+<h3 id="c3-take-a-story-down">Take a story down</h3>
+<div class="admonition danger">
+<p class="admonition-title">Use with care</p>
+<p>Taking a story down removes it from the website, apps and feeds. It stays in the newsroom with its history. Your outlet's policy may require the editor-in-chief or legal to approve.</p>
+</div>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open the story and select <strong>Unpublish</strong>.</li>
+<li>Choose the reason (legal, error, embargo, other) and write a note.</li>
+<li>Choose whether readers who open the old address see a short notice or a <em>page not found</em>.</li>
+<li>Confirm with your two-step code if asked.</li>
+</ol>
+</div>
+<h2 id="c3-translation-desk"><span class="sn" style="color:var(--accent);margin-right:.45em">3.5</span>Translation desk</h2>
+<h3 id="c3-send-a-story-to-another-edition">Send a story to another edition</h3>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>In Story Studio open <strong>Translations</strong>.</li>
+<li>Select the editions that should carry the story and choose <strong>Request translation</strong>.</li>
+<li>The request appears on the <strong>Translation desk</strong> of each edition.</li>
+</ol>
+</div>
+<h3 id="c3-translate-a-story">Translate a story</h3>
+<div class="admonition role">
+<p class="admonition-title">Who can do this</p>
+<p>Translators and edition editors.</p>
+</div>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open <strong>Translations</strong> and select a story in <strong>To translate</strong>.</li>
+<li>The original is on the left, your version on the right, block by block.</li>
+<li>Use the <strong>termbase</strong> suggestions for names and places. Use the machine draft only if your outlet allows it; it is marked as a draft until you change and approve it.</li>
+<li>Adapt the headline for your readers: a literal translation is often not the best headline.</li>
+<li>Select <strong>Send for review</strong>. An edition editor approves and publishes.</li>
+</ol>
+</div>
+<h3 id="c3-add-a-term-to-the-termbase">Add a term to the termbase</h3>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open <strong>Termbase</strong> and select <strong>New term</strong>.</li>
+<li>Enter the term in the source language and its approved form in each language, with a note on usage.</li>
+<li>Save. Writers and translators see it as a suggestion from now on.</li>
+</ol>
+</div>
+<h2 id="c3-media-desk"><span class="sn" style="color:var(--accent);margin-right:.45em">3.6</span>Media desk</h2>
+<h3 id="c3-upload-a-large-video-from-the-field">Upload a large video from the field</h3>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open <strong>Media → Upload</strong>, or use the <strong>Reporter app</strong>.</li>
+<li>Choose the file. Large files are sent in pieces; if the connection drops, the upload continues where it stopped when you are back online.</li>
+<li>When processing is finished, the file shows a thumbnail and the web versions.</li>
+<li>Add captions, credit and the rights.</li>
+</ol>
+</div>
+<h3 id="c3-record-rights-and-expiry-for-agency-material">Record rights and expiry for agency material</h3>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open the media item.</li>
+<li>In <strong>Rights</strong>, choose the licence type and the owner, and set the <strong>expiry date</strong>.</li>
+<li>Save. Before expiry, editors are warned, and the item is flagged in every story that uses it.</li>
+</ol>
+</div>
+<h3 id="c3-prepare-a-vertical-clip-for-social-platforms">Prepare a vertical clip for social platforms</h3>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open <strong>Video</strong> and select the source video.</li>
+<li>Choose <strong>New clip</strong>, set the in and out points.</li>
+<li>Choose the <strong>vertical</strong> format; move the frame to keep the subject in view.</li>
+<li>Add captions (generated or typed) and the outlet's branding.</li>
+<li>Choose the platforms and publish or schedule.</li>
+</ol>
+</div>
+<h2 id="c3-breaking-and-live-desk"><span class="sn" style="color:var(--accent);margin-right:.45em">3.7</span>Breaking and live desk</h2>
+<h3 id="c3-send-a-breaking-alert">Send a breaking alert</h3>
+<div class="admonition role">
+<p class="admonition-title">Who can do this</p>
+<p>Editors with the breaking-news permission. Your outlet may require a second editor to confirm.</p>
+</div>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open <strong>Breaking</strong> and select <strong>New alert</strong>.</li>
+<li>Write one clear line: what happened, where. It appears in banners and notifications as written.</li>
+<li>Link the story, or create a short holding story now and update it later.</li>
+<li>Choose the editions, and the channels: website banner, app and web push, SMS where available.</li>
+<li>Select <strong>Send</strong>. If a second confirmation is required, the alert waits for it.</li>
+<li>When the news is no longer breaking, select <strong>End alert</strong>.</li>
+</ol>
+</div>
+<h3 id="c3-run-a-live-blog">Run a live blog</h3>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open <strong>Live</strong> and select <strong>New live page</strong>. Give a headline, a summary and the editions.</li>
+<li>Publish the live page; it appears on the front page where editors place it.</li>
+<li>Write posts in the composer. Add photos, video, quotes or embeds.</li>
+<li>Mark important posts as <strong>key events</strong>; they appear in the summary at the top.</li>
+<li><strong>Pin</strong> a post to keep it at the top.</li>
+<li>When coverage ends, select <strong>End live coverage</strong> and write a closing summary.</li>
+</ol>
+</div>
+<h2 id="c3-audience-desk"><span class="sn" style="color:var(--accent);margin-right:.45em">3.8</span>Audience desk</h2>
+<h3 id="c3-send-a-newsletter-issue">Send a newsletter issue</h3>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open <strong>Newsletters</strong> and the list.</li>
+<li>Open the next automatic issue, or select <strong>New issue</strong>.</li>
+<li>Check the stories, the order, the subject line and the preview text.</li>
+<li>Select <strong>Send test</strong> to receive it yourself; check it on a phone.</li>
+<li>Select <strong>Schedule</strong> or <strong>Send now</strong>.</li>
+</ol>
+</div>
+<h3 id="c3-send-a-push-notification">Send a push notification</h3>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open <strong>Notifications</strong> and select <strong>New notification</strong>.</li>
+<li>Write the text, link the story, choose the editions and topics.</li>
+<li>Send or schedule. Results (delivered and opened) appear after a few minutes.</li>
+</ol>
+</div>
+<h3 id="c3-moderate-comments">Moderate comments</h3>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open <strong>Comments</strong>. Reported comments are at the top.</li>
+<li>For each comment choose <strong>Approve</strong>, <strong>Hide</strong> or <strong>Reject</strong>, with a reason from the community rules.</li>
+<li>Block a reader who repeatedly breaks the rules; the reason is recorded.</li>
+</ol>
+</div>
+<h3 id="c3-publish-a-callout">Publish a callout</h3>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open <strong>Callouts</strong> and select <strong>New callout</strong>.</li>
+<li>Write what you are looking for and why, and how answers will be used.</li>
+<li>Choose the questions (text, photo, document, contact) and the consent text.</li>
+<li>Publish. Place the callout in stories or on the front page.</li>
+<li>Read answers in the callout; move useful material to <strong>Uploads</strong> for checking.</li>
+</ol>
+</div>
+<h2 id="c3-standards-desk"><span class="sn" style="color:var(--accent);margin-right:.45em">3.9</span>Standards desk</h2>
+<h3 id="c3-handle-a-reader-complaint">Handle a reader complaint</h3>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open <strong>Complaints</strong>. New complaints show the deadline your policy sets.</li>
+<li>Assign the complaint to the responsible editor.</li>
+<li>Investigate; record what you found.</li>
+<li>Reply to the reader from the complaint. If a correction is needed, publish it from the story and link it.</li>
+<li>Close the complaint with the outcome.</li>
+</ol>
+</div>
+<h3 id="c3-publish-a-fact-check">Publish a fact-check</h3>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open <strong>Fact-checks</strong> and select <strong>New fact-check</strong>.</li>
+<li>Enter the claim, who made it, where and when.</li>
+<li>Add the evidence with sources.</li>
+<li>Choose the rating and write the verdict.</li>
+<li>Publish. The verdict is marked up so search engines can show the rating.</li>
+</ol>
+</div>
+<h2 id="c3-field-work-the-reporter-app"><span class="sn" style="color:var(--accent);margin-right:.45em">3.10</span>Field work: the Reporter app</h2>
+<h3 id="c3-file-a-story-from-your-phone">File a story from your phone</h3>
+<div class="admonition steps">
+<p class="admonition-title">Steps</p>
+<ol>
+<li>Open the <strong>Reporter app</strong> and sign in with your staff account and two-step verification.</li>
+<li>Open <strong>Assignments</strong> and move yours through <strong>Accept</strong> and <strong>Start</strong>, or create a new draft.</li>
+<li>Write the headline, summary and paragraphs. Drafts can be written offline.</li>
+<li>Add photos, video or audio from the phone's camera, with caption, credit and alternative text.</li>
+<li>Select <strong>File</strong>. Without a connection, the app keeps the draft and sends it when you are online again; large uploads continue after a dropped connection or an app restart.</li>
+</ol>
+</div>
+<div class="admonition note">
+<p class="admonition-title">When someone else changed the story</p>
+<p>If an editor changed the story while you were offline, the app shows a conflict. Choose <strong>keep mine</strong>, <strong>take theirs</strong> or <strong>save copy</strong>.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Protect your sources in the field</p>
+<p>Lock your phone with a PIN or fingerprint, keep sensitive notes out of ordinary chat and note apps, and file material through the Reporter app rather than sending it through personal messaging.</p>
+</div></section>
+<section class="part" id="p3"><div class="pbar"></div><div class="pnum">Part 3</div><h1>Modules</h1><div class="pdesc">Twenty-four modules from first sign-in to disaster recovery.</div><div class="plist"><div><span>4</span>Modules</div></div></section>
+<section class="chapter" id="c4"><header class="chap-open"><div class="chap-band"></div><div class="chap-num">Chapter 4</div><h1>Modules</h1><div class=mini><a href="#c4-module-1-welcome-to-sham-mediaos">4.1&nbsp; Module 1: Welcome to Sham MediaOS<span class="pg" data-t="c4-module-1-welcome-to-sham-mediaos"></span></a><a href="#c4-module-2-signing-in-safely">4.2&nbsp; Module 2: Signing in safely<span class="pg" data-t="c4-module-2-signing-in-safely"></span></a><a href="#c4-module-3-planning-and-assignments">4.3&nbsp; Module 3: Planning and assignments<span class="pg" data-t="c4-module-3-planning-and-assignments"></span></a><a href="#c4-module-4-writing-in-story-studio">4.4&nbsp; Module 4: Writing in Story Studio<span class="pg" data-t="c4-module-4-writing-in-story-studio"></span></a><a href="#c4-module-5-media-photos-audio-video-and-documents">4.5&nbsp; Module 5: Media: photos, audio, video and documents<span class="pg" data-t="c4-module-5-media-photos-audio-video-and-documents"></span></a><a href="#c4-module-6-editing-approval-and-publishing">4.6&nbsp; Module 6: Editing, approval and publishing<span class="pg" data-t="c4-module-6-editing-approval-and-publishing"></span></a><a href="#c4-module-7-updates-corrections-and-takedowns">4.7&nbsp; Module 7: Updates, corrections and takedowns<span class="pg" data-t="c4-module-7-updates-corrections-and-takedowns"></span></a><a href="#c4-module-8-languages-translation-and-the-termbase">4.8&nbsp; Module 8: Languages, translation and the termbase<span class="pg" data-t="c4-module-8-languages-translation-and-the-termbase"></span></a><a href="#c4-module-9-breaking-news-and-live-coverage">4.9&nbsp; Module 9: Breaking news and live coverage<span class="pg" data-t="c4-module-9-breaking-news-and-live-coverage"></span></a><a href="#c4-module-10-front-pages-structure-and-seo">4.10&nbsp; Module 10: Front pages, structure and SEO<span class="pg" data-t="c4-module-10-front-pages-structure-and-seo"></span></a><a href="#c4-module-11-newsletters-and-notifications">4.11&nbsp; Module 11: Newsletters and notifications<span class="pg" data-t="c4-module-11-newsletters-and-notifications"></span></a><a href="#c4-module-12-social-video-and-podcasts">4.12&nbsp; Module 12: Social, video and podcasts<span class="pg" data-t="c4-module-12-social-video-and-podcasts"></span></a><a href="#c4-module-13-audience-interaction-and-moderation">4.13&nbsp; Module 13: Audience interaction and moderation<span class="pg" data-t="c4-module-13-audience-interaction-and-moderation"></span></a><a href="#c4-module-14-standards-complaints-and-fact-checks">4.14&nbsp; Module 14: Standards: complaints and fact-checks<span class="pg" data-t="c4-module-14-standards-complaints-and-fact-checks"></span></a><a href="#c4-module-15-investigations-and-source-protection">4.15&nbsp; Module 15: Investigations and source protection<span class="pg" data-t="c4-module-15-investigations-and-source-protection"></span></a><a href="#c4-module-16-elections">4.16&nbsp; Module 16: Elections<span class="pg" data-t="c4-module-16-elections"></span></a><a href="#c4-module-17-broadcast-rundowns-and-studios">4.17&nbsp; Module 17: Broadcast: rundowns and studios<span class="pg" data-t="c4-module-17-broadcast-rundowns-and-studios"></span></a><a href="#c4-module-18-revenue-and-advertising">4.18&nbsp; Module 18: Revenue and advertising<span class="pg" data-t="c4-module-18-revenue-and-advertising"></span></a><a href="#c4-module-19-analytics">4.19&nbsp; Module 19: Analytics<span class="pg" data-t="c4-module-19-analytics"></span></a><a href="#c4-module-20-the-reporter-app">4.20&nbsp; Module 20: The Reporter app<span class="pg" data-t="c4-module-20-the-reporter-app"></span></a><a href="#c4-module-21-administration-people-and-roles">4.21&nbsp; Module 21: Administration: people and roles<span class="pg" data-t="c4-module-21-administration-people-and-roles"></span></a><a href="#c4-module-22-administration-brand-editions-licence-and-integrations">4.22&nbsp; Module 22: Administration: brand, editions, licence and integrations<span class="pg" data-t="c4-module-22-administration-brand-editions-licence-and-integrations"></span></a><a href="#c4-module-23-administration-security-audit-and-backups">4.23&nbsp; Module 23: Administration: security, audit and backups<span class="pg" data-t="c4-module-23-administration-security-audit-and-backups"></span></a><a href="#c4-module-24-operations-install-update-and-recover">4.24&nbsp; Module 24: Operations: install, update and recover<span class="pg" data-t="c4-module-24-operations-install-update-and-recover"></span></a></div></header><p>Twenty-four modules, each with objectives, a demonstration, an exercise and a quiz.</p>
+<h2 id="c4-module-1-welcome-to-sham-mediaos"><span class="sn" style="color:var(--accent);margin-right:.45em">4.1</span>Module 1: Welcome to Sham MediaOS</h2>
+<div class="kv"><dt>For</dt><dd>Everyone</dd><dt>Duration</dt><dd>0 h 45 min</dd><dt>Before this</dt><dd>Nothing</dd></div>
+
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>https://horndaily.example</span></div><img src="../img/nr-newsroom.webp" alt="Welcome to Sham MediaOS" loading="lazy"></div><figcaption>Welcome to Sham MediaOS</figcaption></figure>
+
+<div class="admonition note">
+<p class="admonition-title">Objectives</p>
+<p>After this module you can:
+* Explain what Sham MediaOS does for the newsroom, the website, the apps and broadcast
+* Name the editions of your outlet and their languages
+* Find the Command centre, My work and the main menu
+* Know where to find help: these manuals, your desk chief, your administrator</p>
+</div>
+<h3 id="c4-demonstration">Demonstration</h3>
+<ol>
+<li>
+<p>Show the public website in two editions, including a right-to-left or Ethiopic one.</p>
+</li>
+<li>
+<p>Show the Command centre and explain each card.</p>
+</li>
+<li>Open the menu and name each workspace in one sentence.</li>
+</ol>
+<div class="admonition exercise">
+<p class="admonition-title">Hands-on exercise</p>
+<ol>
+<li>Open the website of your outlet in two editions and find the same section in each.</li>
+<li>Sign in to the newsroom training account.</li>
+<li>Open My work and tell the trainer what is in it.</li>
+<li>Use the command palette (Ctrl+K) to jump to Planning, then to Stories.</li>
+</ol>
+</div>
+<div class="admonition quiz">
+<p class="admonition-title">Check your understanding</p>
+<ol>
+<li>What is an edition?</li>
+<li>What happens to the public website if the licence lapses?</li>
+<li>Which page shows what is waiting for you?</li>
+<li>Which keys open the command palette?</li>
+<li>Where are the screenshots in these manuals taken from?</li>
+</ol>
+</div>
+<p>Answers are in the Assessment part, module 1.</p>
+<h2 id="c4-module-2-signing-in-safely"><span class="sn" style="color:var(--accent);margin-right:.45em">4.2</span>Module 2: Signing in safely</h2>
+<div class="kv"><dt>For</dt><dd>Everyone</dd><dt>Duration</dt><dd>0 h 45 min</dd><dt>Before this</dt><dd>Module 1</dd></div>
+
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>https://horndaily.example</span></div><img src="../img/nr-login.webp" alt="Signing in safely" loading="lazy"></div><figcaption>Signing in safely</figcaption></figure>
+
+<div class="admonition note">
+<p class="admonition-title">Objectives</p>
+<p>After this module you can:
+* Sign in with a password and two-step verification
+* Set up an authenticator app and keep recovery codes
+* Add a passkey
+* Recognise phishing and protect your account</p>
+</div>
+<h3 id="c4-demonstration_1">Demonstration</h3>
+<ol>
+<li>
+<p>Walk through the first sign-in from an invitation.</p>
+</li>
+<li>
+<p>Set up an authenticator app on a phone.</p>
+</li>
+<li>Add a passkey and sign in with it.</li>
+</ol>
+<div class="admonition exercise">
+<p class="admonition-title">Hands-on exercise</p>
+<ol>
+<li>Accept your training invitation and choose a strong passphrase.</li>
+<li>Set up two-step sign-in with an authenticator app.</li>
+<li>Store your recovery codes in a safe place (not in the same phone).</li>
+<li>Add a passkey from My profile and security.</li>
+<li>Sign out and sign in again with the passkey.</li>
+<li>Open your list of signed-in devices and sign out an old one.</li>
+</ol>
+</div>
+<div class="admonition quiz">
+<p class="admonition-title">Check your understanding</p>
+<ol>
+<li>Why are SMS codes not used for staff sign-in?</li>
+<li>You lost your phone. What do you use?</li>
+<li>Can you reuse a recovery code?</li>
+<li>An e-mail asks you to sign in through a link to fix your account. What do you do?</li>
+<li>Why are you asked to sign in again before adding a passkey?</li>
+</ol>
+</div>
+<p>Answers are in the Assessment part, module 2.</p>
+<h2 id="c4-module-3-planning-and-assignments"><span class="sn" style="color:var(--accent);margin-right:.45em">4.3</span>Module 3: Planning and assignments</h2>
+<div class="kv"><dt>For</dt><dd>Reporters, editors</dd><dt>Duration</dt><dd>1 h 00 min</dd><dt>Before this</dt><dd>Module 1 and 2</dd></div>
+
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>https://horndaily.example</span></div><img src="../img/nr-newsroom-planning.webp" alt="Planning and assignments" loading="lazy"></div><figcaption>Planning and assignments</figcaption></figure>
+
+<div class="admonition note">
+<p class="admonition-title">Objectives</p>
+<p>After this module you can:
+* Create a pitch with angle, desk and edition
+* Assign a story with a deadline
+* Use the editorial calendar
+* Follow assignments through My work</p>
+</div>
+<h3 id="c4-demonstration_2">Demonstration</h3>
+<ol>
+<li>
+<p>Create a pitch and assign it.</p>
+</li>
+<li>
+<p>Show the calendar and link an event to a pitch.</p>
+</li>
+</ol>
+<div class="admonition exercise">
+<p class="admonition-title">Hands-on exercise</p>
+<ol>
+<li>Create a pitch for a story in your beat.</li>
+<li>Ask the trainer (as editor) to assign it to you with a deadline.</li>
+<li>Find the assignment in My work.</li>
+<li>Add a calendar event for a press conference tomorrow and link it to your pitch.</li>
+<li>Start the story from the pitch.</li>
+</ol>
+</div>
+<div class="admonition quiz">
+<p class="admonition-title">Check your understanding</p>
+<ol>
+<li>Where does an assigned story appear for the reporter?</li>
+<li>What should a pitch contain?</li>
+<li>Who can assign stories?</li>
+<li>Why link events to pitches?</li>
+<li>Can one pitch target several editions?</li>
+</ol>
+</div>
+<p>Answers are in the Assessment part, module 3.</p>
+<h2 id="c4-module-4-writing-in-story-studio"><span class="sn" style="color:var(--accent);margin-right:.45em">4.4</span>Module 4: Writing in Story Studio</h2>
+<div class="kv"><dt>For</dt><dd>Reporters, editors</dd><dt>Duration</dt><dd>1 h 30 min</dd><dt>Before this</dt><dd>Module 1 and 2</dd></div>
+
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>https://horndaily.example</span></div><img src="../img/nr-newsroom-articles-id.webp" alt="Writing in Story Studio" loading="lazy"></div><figcaption>Writing in Story Studio</figcaption></figure>
+
+<div class="admonition note">
+<p class="admonition-title">Objectives</p>
+<p>After this module you can:
+* Write a headline and summary that work in search and sharing
+* Build a story from blocks
+* Fill the story settings
+* Use the readiness check</p>
+</div>
+<h3 id="c4-demonstration_3">Demonstration</h3>
+<ol>
+<li>
+<p>Write a short story with text, a heading, a quote and a photo.</p>
+</li>
+<li>
+<p>Show versions and how to restore one.</p>
+</li>
+</ol>
+<div class="admonition exercise">
+<p class="admonition-title">Hands-on exercise</p>
+<ol>
+<li>Create a new news story in your edition.</li>
+<li>Write a headline under 70 characters and a one-sentence summary.</li>
+<li>Write four paragraphs, a subheading and a quote block.</li>
+<li>Insert a photo from the library with caption, credit and alternative text.</li>
+<li>Choose the section and two tags.</li>
+<li>Open Readiness and fix every red item.</li>
+<li>Open Versions and compare your first and latest version.</li>
+</ol>
+</div>
+<div class="admonition quiz">
+<p class="admonition-title">Check your understanding</p>
+<ol>
+<li>What is alternative text for?</li>
+<li>How do you insert a block?</li>
+<li>Do you need to press Save?</li>
+<li>What does the readiness check do?</li>
+<li>Can you get back an earlier version?</li>
+</ol>
+</div>
+<p>Answers are in the Assessment part, module 4.</p>
+<h2 id="c4-module-5-media-photos-audio-video-and-documents"><span class="sn" style="color:var(--accent);margin-right:.45em">4.5</span>Module 5: Media: photos, audio, video and documents</h2>
+<div class="kv"><dt>For</dt><dd>Everyone who adds media</dd><dt>Duration</dt><dd>1 h 15 min</dd><dt>Before this</dt><dd>Module 1 and 2</dd></div>
+
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>https://horndaily.example</span></div><img src="../img/nr-newsroom-media.webp" alt="Media: photos, audio, video and documents" loading="lazy"></div><figcaption>Media: photos, audio, video and documents</figcaption></figure>
+
+<div class="admonition note">
+<p class="admonition-title">Objectives</p>
+<p>After this module you can:
+* Upload media, including large files
+* Describe media with captions, credits, alternative text and rights
+* Set the focal point
+* Respect rights and expiry</p>
+</div>
+<h3 id="c4-demonstration_4">Demonstration</h3>
+<ol>
+<li>
+<p>Upload a large video and show resumable upload.</p>
+</li>
+<li>
+<p>Show rights and expiry on an agency photo.</p>
+</li>
+</ol>
+<div class="admonition exercise">
+<p class="admonition-title">Hands-on exercise</p>
+<ol>
+<li>Upload three photos and one short video.</li>
+<li>Write captions in your edition language and alternative text for each.</li>
+<li>Record one photo as agency material with an expiry date next month.</li>
+<li>Set the focal point on a portrait.</li>
+<li>Use one photo in your story from module 4.</li>
+</ol>
+</div>
+<div class="admonition quiz">
+<p class="admonition-title">Check your understanding</p>
+<ol>
+<li>What happens if the connection drops during a large upload?</li>
+<li>Why record rights and expiry?</li>
+<li>Does changing a caption in a story change it in the library?</li>
+<li>What is the focal point for?</li>
+<li>Where does material sent by contributors arrive?</li>
+</ol>
+</div>
+<p>Answers are in the Assessment part, module 5.</p>
+<h2 id="c4-module-6-editing-approval-and-publishing"><span class="sn" style="color:var(--accent);margin-right:.45em">4.6</span>Module 6: Editing, approval and publishing</h2>
+<div class="kv"><dt>For</dt><dd>Editors</dd><dt>Duration</dt><dd>1 h 30 min</dd><dt>Before this</dt><dd>Module 1 and 2</dd></div>
+
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>https://horndaily.example</span></div><img src="../img/nr-newsroom-articles.webp" alt="Editing, approval and publishing" loading="lazy"></div><figcaption>Editing, approval and publishing</figcaption></figure>
+
+<div class="admonition note">
+<p class="admonition-title">Objectives</p>
+<p>After this module you can:
+* Take a submitted story into edit
+* Raise and resolve queries
+* Publish, schedule and return stories
+* Work with approval chains</p>
+</div>
+<h3 id="c4-demonstration_5">Demonstration</h3>
+<ol>
+<li>
+<p>Edit a submitted story with track changes and a query.</p>
+</li>
+<li>
+<p>Show a story blocked by an approval chain.</p>
+</li>
+</ol>
+<div class="admonition exercise">
+<p class="admonition-title">Hands-on exercise</p>
+<ol>
+<li>Pair up: one trainee submits a story, the other edits it.</li>
+<li>As editor, raise a query on one paragraph.</li>
+<li>As reporter, answer and resolve the query.</li>
+<li>As editor, schedule the story for ten minutes later.</li>
+<li>Watch it publish on the website.</li>
+<li>Return another story to the reporter with a note.</li>
+</ol>
+</div>
+<div class="admonition quiz">
+<p class="admonition-title">Check your understanding</p>
+<ol>
+<li>Can a reporter change a story while an editor has it?</li>
+<li>When is the Publish button disabled?</li>
+<li>Can you approve your own story under a chain?</li>
+<li>In which time zone is a scheduled time?</li>
+<li>Where are approvals recorded?</li>
+</ol>
+</div>
+<p>Answers are in the Assessment part, module 6.</p>
+<h2 id="c4-module-7-updates-corrections-and-takedowns"><span class="sn" style="color:var(--accent);margin-right:.45em">4.7</span>Module 7: Updates, corrections and takedowns</h2>
+<div class="kv"><dt>For</dt><dd>Editors</dd><dt>Duration</dt><dd>1 h 00 min</dd><dt>Before this</dt><dd>Module 1 and 2</dd></div>
+
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>https://horndaily.example</span></div><img src="../img/pub-lang-corrections.webp" alt="Updates, corrections and takedowns" loading="lazy"></div><figcaption>Updates, corrections and takedowns</figcaption></figure>
+
+<div class="admonition note">
+<p class="admonition-title">Objectives</p>
+<p>After this module you can:
+* Publish an update with a note to readers
+* Publish a correction the right way
+* Take a story down with a reason
+* Explain why silent edits damage trust</p>
+</div>
+<h3 id="c4-demonstration_6">Demonstration</h3>
+<ol>
+<li>Show a correction on a story and on the public corrections page.</li>
+</ol>
+<div class="admonition exercise">
+<p class="admonition-title">Hands-on exercise</p>
+<ol>
+<li>Publish an update to your training story with an update note.</li>
+<li>Introduce a factual error, then correct it with a correction note.</li>
+<li>Find your correction on the public corrections page.</li>
+<li>Unpublish a training story with the reason <em>test</em>.</li>
+</ol>
+</div>
+<div class="admonition quiz">
+<p class="admonition-title">Check your understanding</p>
+<ol>
+<li>Where do corrections appear?</li>
+<li>Should a correction repeat a defamatory claim?</li>
+<li>Does unpublishing delete the story?</li>
+<li>Who is told about a correction?</li>
+<li>What is the difference between an update and a correction?</li>
+</ol>
+</div>
+<p>Answers are in the Assessment part, module 7.</p>
+<h2 id="c4-module-8-languages-translation-and-the-termbase"><span class="sn" style="color:var(--accent);margin-right:.45em">4.8</span>Module 8: Languages, translation and the termbase</h2>
+<div class="kv"><dt>For</dt><dd>Translators, edition editors</dd><dt>Duration</dt><dd>1 h 15 min</dd><dt>Before this</dt><dd>Module 1 and 2</dd></div>
+
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>https://horndaily.example</span></div><img src="../img/nr-newsroom-translations.webp" alt="Languages, translation and the termbase" loading="lazy"></div><figcaption>Languages, translation and the termbase</figcaption></figure>
+
+<div class="admonition note">
+<p class="admonition-title">Objectives</p>
+<p>After this module you can:
+* Request a translation
+* Translate side by side
+* Use and add termbase entries
+* Approve a translation</p>
+</div>
+<h3 id="c4-demonstration_7">Demonstration</h3>
+<ol>
+<li>
+<p>Request a translation and translate it.</p>
+</li>
+<li>
+<p>Show termbase suggestions.</p>
+</li>
+</ol>
+<div class="admonition exercise">
+<p class="admonition-title">Hands-on exercise</p>
+<ol>
+<li>Request translation of your story into a second edition.</li>
+<li>Open it on the Translation desk and translate the headline and two paragraphs.</li>
+<li>Add a place name to the termbase with spellings in two languages.</li>
+<li>Send for review; the trainer approves.</li>
+</ol>
+</div>
+<div class="admonition quiz">
+<p class="admonition-title">Check your understanding</p>
+<ol>
+<li>Is a machine draft publishable as it is?</li>
+<li>What is the termbase?</li>
+<li>Should a headline be translated literally?</li>
+<li>Who approves translations?</li>
+<li>What happens when a reader opens a page missing in their edition?</li>
+</ol>
+</div>
+<p>Answers are in the Assessment part, module 8.</p>
+<h2 id="c4-module-9-breaking-news-and-live-coverage"><span class="sn" style="color:var(--accent);margin-right:.45em">4.9</span>Module 9: Breaking news and live coverage</h2>
+<div class="kv"><dt>For</dt><dd>Editors, live producers</dd><dt>Duration</dt><dd>1 h 15 min</dd><dt>Before this</dt><dd>Module 1 and 2</dd></div>
+
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>https://horndaily.example</span></div><img src="../img/nr-newsroom-breaking.webp" alt="Breaking news and live coverage" loading="lazy"></div><figcaption>Breaking news and live coverage</figcaption></figure>
+
+<div class="admonition note">
+<p class="admonition-title">Objectives</p>
+<p>After this module you can:
+* Send and end a breaking alert
+* Run a live blog with key events
+* Follow your outlet's breaking news policy</p>
+</div>
+<h3 id="c4-demonstration_8">Demonstration</h3>
+<ol>
+<li>
+<p>Send a breaking alert to one training edition.</p>
+</li>
+<li>
+<p>Run a live blog for ten minutes.</p>
+</li>
+</ol>
+<div class="admonition exercise">
+<p class="admonition-title">Hands-on exercise</p>
+<ol>
+<li>Write a one-line alert and send it to the training edition.</li>
+<li>Check the banner on the website and the push on a phone.</li>
+<li>Open a live page and post five updates, one with a photo.</li>
+<li>Mark two posts as key events and pin one.</li>
+<li>End the alert and close the live page with a summary.</li>
+</ol>
+</div>
+<div class="admonition quiz">
+<p class="admonition-title">Check your understanding</p>
+<ol>
+<li>Which channels can a breaking alert use?</li>
+<li>Why might an alert wait before sending?</li>
+<li>Do readers need to reload a live page?</li>
+<li>What are key events?</li>
+<li>When should an alert end?</li>
+</ol>
+</div>
+<p>Answers are in the Assessment part, module 9.</p>
+<h2 id="c4-module-10-front-pages-structure-and-seo"><span class="sn" style="color:var(--accent);margin-right:.45em">4.10</span>Module 10: Front pages, structure and SEO</h2>
+<div class="kv"><dt>For</dt><dd>Home page editors, SEO editors</dd><dt>Duration</dt><dd>1 h 00 min</dd><dt>Before this</dt><dd>Module 1 and 2</dd></div>
+
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>https://horndaily.example</span></div><img src="../img/nr-newsroom-layouts.webp" alt="Front pages, structure and SEO" loading="lazy"></div><figcaption>Front pages, structure and SEO</figcaption></figure>
+
+<div class="admonition note">
+<p class="admonition-title">Objectives</p>
+<p>After this module you can:
+* Arrange the front page
+* Manage sections and topics
+* Set search and sharing details</p>
+</div>
+<h3 id="c4-demonstration_9">Demonstration</h3>
+<ol>
+<li>
+<p>Rearrange a front page block.</p>
+</li>
+<li>
+<p>Show the search title and social card of a story.</p>
+</li>
+</ol>
+<div class="admonition exercise">
+<p class="admonition-title">Hands-on exercise</p>
+<ol>
+<li>Move your training story into the lead position of the training edition.</li>
+<li>Create a topic and add two stories to it.</li>
+<li>Set a search title and description on your story.</li>
+<li>Check the social card preview.</li>
+</ol>
+</div>
+<div class="admonition quiz">
+<p class="admonition-title">Check your understanding</p>
+<ol>
+<li>Where are front pages arranged?</li>
+<li>What is a topic?</li>
+<li>Why set a separate search title?</li>
+<li>What links editions for search engines?</li>
+<li>Where are sections created?</li>
+</ol>
+</div>
+<p>Answers are in the Assessment part, module 10.</p>
+<h2 id="c4-module-11-newsletters-and-notifications"><span class="sn" style="color:var(--accent);margin-right:.45em">4.11</span>Module 11: Newsletters and notifications</h2>
+<div class="kv"><dt>For</dt><dd>Audience and newsletter editors</dd><dt>Duration</dt><dd>1 h 15 min</dd><dt>Before this</dt><dd>Module 1 and 2</dd></div>
+
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>https://horndaily.example</span></div><img src="../img/nr-newsroom-newsletters.webp" alt="Newsletters and notifications" loading="lazy"></div><figcaption>Newsletters and notifications</figcaption></figure>
+
+<div class="admonition note">
+<p class="admonition-title">Objectives</p>
+<p>After this module you can:
+* Create a list and an issue
+* Test and schedule sending
+* Send a push notification
+* Read deliverability</p>
+</div>
+<h3 id="c4-demonstration_10">Demonstration</h3>
+<ol>
+<li>
+<p>Build and test an issue.</p>
+</li>
+<li>
+<p>Explain bounce and complaint rates.</p>
+</li>
+</ol>
+<div class="admonition exercise">
+<p class="admonition-title">Hands-on exercise</p>
+<ol>
+<li>Create a training list with a description in your language.</li>
+<li>Create an issue with three stories and a subject line.</li>
+<li>Send a test to yourself and read it on your phone.</li>
+<li>Schedule the issue.</li>
+<li>Send a push notification to the training topic.</li>
+<li>Open Deliverability and read the rates.</li>
+</ol>
+</div>
+<div class="admonition quiz">
+<p class="admonition-title">Check your understanding</p>
+<ol>
+<li>Why double opt-in?</li>
+<li>What happens to hard bounces?</li>
+<li>A good complaint rate is below…?</li>
+<li>Who should receive a push?</li>
+<li>Where are e-mail texts edited?</li>
+</ol>
+</div>
+<p>Answers are in the Assessment part, module 11.</p>
+<h2 id="c4-module-12-social-video-and-podcasts"><span class="sn" style="color:var(--accent);margin-right:.45em">4.12</span>Module 12: Social, video and podcasts</h2>
+<div class="kv"><dt>For</dt><dd>Social editors, video editors, podcast producers</dd><dt>Duration</dt><dd>1 h 15 min</dd><dt>Before this</dt><dd>Module 1 and 2</dd></div>
+
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>https://horndaily.example</span></div><img src="../img/nr-newsroom-video.webp" alt="Social, video and podcasts" loading="lazy"></div><figcaption>Social, video and podcasts</figcaption></figure>
+
+<div class="admonition note">
+<p class="admonition-title">Objectives</p>
+<p>After this module you can:
+* Schedule social posts
+* Make a vertical clip with captions
+* Publish a podcast episode</p>
+</div>
+<h3 id="c4-demonstration_11">Demonstration</h3>
+<ol>
+<li>
+<p>Make a vertical clip.</p>
+</li>
+<li>
+<p>Publish an episode with a transcript.</p>
+</li>
+</ol>
+<div class="admonition exercise">
+<p class="admonition-title">Hands-on exercise</p>
+<ol>
+<li>Schedule a social post for your story.</li>
+<li>Cut a 30-second vertical clip with captions.</li>
+<li>Create a podcast episode with title, description and chapters.</li>
+<li>Schedule it for tomorrow.</li>
+</ol>
+</div>
+<div class="admonition quiz">
+<p class="admonition-title">Check your understanding</p>
+<ol>
+<li>Why link social posts to your own site?</li>
+<li>What podcast artwork size is required?</li>
+<li>Where do podcast platforms read episodes from?</li>
+<li>Should AI transcripts be checked?</li>
+<li>Where are clip uploads recorded?</li>
+</ol>
+</div>
+<p>Answers are in the Assessment part, module 12.</p>
+<h2 id="c4-module-13-audience-interaction-and-moderation"><span class="sn" style="color:var(--accent);margin-right:.45em">4.13</span>Module 13: Audience interaction and moderation</h2>
+<div class="kv"><dt>For</dt><dd>Moderators, engagement editors</dd><dt>Duration</dt><dd>1 h 00 min</dd><dt>Before this</dt><dd>Module 1 and 2</dd></div>
+
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>https://horndaily.example</span></div><img src="../img/nr-newsroom-comments.webp" alt="Audience interaction and moderation" loading="lazy"></div><figcaption>Audience interaction and moderation</figcaption></figure>
+
+<div class="admonition note">
+<p class="admonition-title">Objectives</p>
+<p>After this module you can:
+* Publish a callout and handle answers
+* Moderate comments
+* Handle tips safely</p>
+</div>
+<h3 id="c4-demonstration_12">Demonstration</h3>
+<ol>
+<li>
+<p>Moderate a queue with reported comments.</p>
+</li>
+<li>
+<p>Publish a callout.</p>
+</li>
+</ol>
+<div class="admonition exercise">
+<p class="admonition-title">Hands-on exercise</p>
+<ol>
+<li>Publish a training callout with two questions and a consent text.</li>
+<li>Answer it from the website as a reader.</li>
+<li>Moderate five comments: approve, hide, reject.</li>
+<li>Block a test reader with a reason.</li>
+</ol>
+</div>
+<div class="admonition quiz">
+<p class="admonition-title">Check your understanding</p>
+<ol>
+<li>Which comments are handled first?</li>
+<li>What must a callout explain?</li>
+<li>Where do callout attachments go for checking?</li>
+<li>Is a blocked reader recorded?</li>
+<li>Pre- or post-moderation for sensitive stories?</li>
+</ol>
+</div>
+<p>Answers are in the Assessment part, module 13.</p>
+<h2 id="c4-module-14-standards-complaints-and-fact-checks"><span class="sn" style="color:var(--accent);margin-right:.45em">4.14</span>Module 14: Standards: complaints and fact-checks</h2>
+<div class="kv"><dt>For</dt><dd>Standards editors, fact-checkers</dd><dt>Duration</dt><dd>1 h 00 min</dd><dt>Before this</dt><dd>Module 1 and 2</dd></div>
+
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>https://horndaily.example</span></div><img src="../img/nr-newsroom-fact-checks.webp" alt="Standards: complaints and fact-checks" loading="lazy"></div><figcaption>Standards: complaints and fact-checks</figcaption></figure>
+
+<div class="admonition note">
+<p class="admonition-title">Objectives</p>
+<p>After this module you can:
+* Handle a complaint to closure
+* Publish a fact-check with a rating</p>
+</div>
+<h3 id="c4-demonstration_13">Demonstration</h3>
+<ol>
+<li>Walk through a complaint and its correction.</li>
+</ol>
+<div class="admonition exercise">
+<p class="admonition-title">Hands-on exercise</p>
+<ol>
+<li>Submit a complaint from the website.</li>
+<li>Assign it, record findings and reply.</li>
+<li>Publish a fact-check with evidence and a rating.</li>
+</ol>
+</div>
+<div class="admonition quiz">
+<p class="admonition-title">Check your understanding</p>
+<ol>
+<li>What does a complaint get when it arrives?</li>
+<li>Why mark up fact-checks?</li>
+<li>Can a complaint be closed without a reply?</li>
+<li>Where is the JTI self-assessment?</li>
+<li>Who should see legal notes?</li>
+</ol>
+</div>
+<p>Answers are in the Assessment part, module 14.</p>
+<h2 id="c4-module-15-investigations-and-source-protection"><span class="sn" style="color:var(--accent);margin-right:.45em">4.15</span>Module 15: Investigations and source protection</h2>
+<div class="kv"><dt>For</dt><dd>Investigative reporters, editors</dd><dt>Duration</dt><dd>1 h 00 min</dd><dt>Before this</dt><dd>Module 1 and 2</dd></div>
+
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>https://horndaily.example</span></div><img src="../img/nr-newsroom-investigations.webp" alt="Investigations and source protection" loading="lazy"></div><figcaption>Investigations and source protection</figcaption></figure>
+
+<div class="admonition note">
+<p class="admonition-title">Objectives</p>
+<p>After this module you can:
+* Open a closed investigation
+* Protect sources and material
+* Publish through the investigation chain</p>
+</div>
+<h3 id="c4-demonstration_14">Demonstration</h3>
+<ol>
+<li>Create an investigation and add members.</li>
+</ol>
+<div class="admonition exercise">
+<p class="admonition-title">Hands-on exercise</p>
+<ol>
+<li>Create an investigation with a neutral code name.</li>
+<li>Add one member.</li>
+<li>Upload a document with source notes.</li>
+<li>Link an entity and add a timeline entry.</li>
+</ol>
+</div>
+<div class="admonition quiz">
+<p class="admonition-title">Check your understanding</p>
+<ol>
+<li>Can administrators read every investigation?</li>
+<li>Is investigation material sent to outside AI services?</li>
+<li>Where do source names belong?</li>
+<li>Why a neutral code name?</li>
+<li>How are investigation stories published?</li>
+</ol>
+</div>
+<p>Answers are in the Assessment part, module 15.</p>
+<h2 id="c4-module-16-elections"><span class="sn" style="color:var(--accent);margin-right:.45em">4.16</span>Module 16: Elections</h2>
+<div class="kv"><dt>For</dt><dd>Election editors, results staff</dd><dt>Duration</dt><dd>1 h 15 min</dd><dt>Before this</dt><dd>Module 1 and 2</dd></div>
+
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>https://horndaily.example</span></div><img src="../img/pub-lang-elections-slug.webp" alt="Elections" loading="lazy"></div><figcaption>Elections</figcaption></figure>
+
+<div class="admonition note">
+<p class="admonition-title">Objectives</p>
+<p>After this module you can:
+* Set up an election
+* Enter and verify results
+* Publish results to the website, widgets and broadcast</p>
+</div>
+<h3 id="c4-demonstration_15">Demonstration</h3>
+<ol>
+<li>Enter and verify a result.</li>
+</ol>
+<div class="admonition exercise">
+<p class="admonition-title">Hands-on exercise</p>
+<ol>
+<li>Create a training election with two contests.</li>
+<li>Add candidates and parties with colours.</li>
+<li>Enter a result; let a partner verify it.</li>
+<li>See it on the public results page.</li>
+<li>Delete the training results.</li>
+</ol>
+</div>
+<div class="admonition quiz">
+<p class="admonition-title">Check your understanding</p>
+<ol>
+<li>When is an entered result public?</li>
+<li>What updates from the same data?</li>
+<li>Why practice results?</li>
+<li>What is shown with results?</li>
+<li>Which edition includes elections?</li>
+</ol>
+</div>
+<p>Answers are in the Assessment part, module 16.</p>
+<h2 id="c4-module-17-broadcast-rundowns-and-studios"><span class="sn" style="color:var(--accent);margin-right:.45em">4.17</span>Module 17: Broadcast: rundowns and studios</h2>
+<div class="kv"><dt>For</dt><dd>Producers, presenters, studio operators</dd><dt>Duration</dt><dd>2 h 00 min</dd><dt>Before this</dt><dd>Module 1 and 2</dd></div>
+
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>https://horndaily.example</span></div><img src="../img/nr-newsroom-broadcast-rundowns-id.webp" alt="Broadcast: rundowns and studios" loading="lazy"></div><figcaption>Broadcast: rundowns and studios</figcaption></figure>
+
+<div class="admonition note">
+<p class="admonition-title">Objectives</p>
+<p>After this module you can:
+* Build a rundown with timings
+* Use the prompter and presenter view
+* Fire graphics
+* Bring in a remote guest</p>
+</div>
+<h3 id="c4-demonstration_16">Demonstration</h3>
+<ol>
+<li>Run a five-minute bulletin from a rundown.</li>
+</ol>
+<div class="admonition exercise">
+<p class="admonition-title">Hands-on exercise</p>
+<ol>
+<li>Build a rundown of six items that fits five minutes.</li>
+<li>Open the prompter on a tablet.</li>
+<li>Fire a lower third for each speaker.</li>
+<li>Invite a remote guest (a colleague) and bring them on air.</li>
+<li>Mark items done in On air mode.</li>
+</ol>
+</div>
+<div class="admonition quiz">
+<p class="admonition-title">Check your understanding</p>
+<ol>
+<li>What does back time show?</li>
+<li>Does a remote guest install anything?</li>
+<li>Where are graphics shown?</li>
+<li>Default remote guest gateway?</li>
+<li>When should you test a guest?</li>
+</ol>
+</div>
+<p>Answers are in the Assessment part, module 17.</p>
+<h2 id="c4-module-18-revenue-and-advertising"><span class="sn" style="color:var(--accent);margin-right:.45em">4.18</span>Module 18: Revenue and advertising</h2>
+<div class="kv"><dt>For</dt><dd>Revenue and sales managers</dd><dt>Duration</dt><dd>1 h 00 min</dd><dt>Before this</dt><dd>Module 1 and 2</dd></div>
+
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>https://horndaily.example</span></div><img src="../img/nr-newsroom-revenue.webp" alt="Revenue and advertising" loading="lazy"></div><figcaption>Revenue and advertising</figcaption></figure>
+
+<div class="admonition note">
+<p class="admonition-title">Objectives</p>
+<p>After this module you can:
+* Create membership plans
+* Understand payment confirmation
+* Run an ad campaign</p>
+</div>
+<h3 id="c4-demonstration_17">Demonstration</h3>
+<ol>
+<li>Create a plan and show a test payment.</li>
+</ol>
+<div class="admonition exercise">
+<p class="admonition-title">Hands-on exercise</p>
+<ol>
+<li>Create a monthly and a yearly plan in two currencies.</li>
+<li>Set a paywall with five free stories a month.</li>
+<li>Create an advertiser and a campaign with one creative.</li>
+<li>Read the revenue and campaign reports.</li>
+</ol>
+</div>
+<div class="admonition quiz">
+<p class="admonition-title">Check your understanding</p>
+<ol>
+<li>When is a membership active?</li>
+<li>Whose merchant account receives payments?</li>
+<li>What ends a campaign?</li>
+<li>How are bank transfers activated?</li>
+<li>How is sponsored content shown?</li>
+</ol>
+</div>
+<p>Answers are in the Assessment part, module 18.</p>
+<h2 id="c4-module-19-analytics"><span class="sn" style="color:var(--accent);margin-right:.45em">4.19</span>Module 19: Analytics</h2>
+<div class="kv"><dt>For</dt><dd>Editors, audience staff</dd><dt>Duration</dt><dd>0 h 45 min</dd><dt>Before this</dt><dd>Module 1 and 2</dd></div>
+
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>https://horndaily.example</span></div><img src="../img/nr-newsroom-analytics.webp" alt="Analytics" loading="lazy"></div><figcaption>Analytics</figcaption></figure>
+
+<div class="admonition note">
+<p class="admonition-title">Objectives</p>
+<p>After this module you can:
+* Read story and edition analytics
+* Choose the right measure</p>
+</div>
+<h3 id="c4-demonstration_18">Demonstration</h3>
+<ol>
+<li>Compare two stories by reading time.</li>
+</ol>
+<div class="admonition exercise">
+<p class="admonition-title">Hands-on exercise</p>
+<ol>
+<li>Open the analytics of your most-read story this week.</li>
+<li>Compare reading time and completion with another story.</li>
+<li>Find the top source of readers.</li>
+</ol>
+</div>
+<div class="admonition quiz">
+<p class="admonition-title">Check your understanding</p>
+<ol>
+<li>Best sign of value?</li>
+<li>Are third-party trackers used?</li>
+<li>When should you look at a story's analytics?</li>
+<li>What are returning readers?</li>
+<li>Which edition includes analytics?</li>
+</ol>
+</div>
+<p>Answers are in the Assessment part, module 19.</p>
+<h2 id="c4-module-20-the-reporter-app"><span class="sn" style="color:var(--accent);margin-right:.45em">4.20</span>Module 20: The Reporter app</h2>
+<div class="kv"><dt>For</dt><dd>Reporters in the field</dd><dt>Duration</dt><dd>0 h 45 min</dd><dt>Before this</dt><dd>Module 1 and 2</dd></div>
+
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>https://horndaily.example</span></div><img src="../img/phone-en.webp" alt="The Reporter app" loading="lazy"></div><figcaption>The Reporter app</figcaption></figure>
+
+<div class="admonition note">
+<p class="admonition-title">Objectives</p>
+<p>After this module you can:
+* Sign in to the Reporter app
+* File a story offline
+* Upload media from the field</p>
+</div>
+<h3 id="c4-demonstration_19">Demonstration</h3>
+<ol>
+<li>File from a phone in airplane mode.</li>
+</ol>
+<div class="admonition exercise">
+<p class="admonition-title">Hands-on exercise</p>
+<ol>
+<li>Install the Reporter app and sign in.</li>
+<li>Accept an assignment.</li>
+<li>Switch on airplane mode and write a draft with a photo.</li>
+<li>Switch it off and watch the draft send.</li>
+<li>Resolve a conflict by choosing <em>save copy</em>.</li>
+</ol>
+</div>
+<div class="admonition quiz">
+<p class="admonition-title">Check your understanding</p>
+<ol>
+<li>Can you write without a connection?</li>
+<li>What happens to a large upload after an app restart?</li>
+<li>What are the conflict choices?</li>
+<li>Which languages can the app itself use?</li>
+<li>Does story text follow the app language?</li>
+</ol>
+</div>
+<p>Answers are in the Assessment part, module 20.</p>
+<h2 id="c4-module-21-administration-people-and-roles"><span class="sn" style="color:var(--accent);margin-right:.45em">4.21</span>Module 21: Administration: people and roles</h2>
+<div class="kv"><dt>For</dt><dd>Administrators</dd><dt>Duration</dt><dd>1 h 30 min</dd><dt>Before this</dt><dd>Module 1 and 2</dd></div>
+
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>https://horndaily.example</span></div><img src="../img/nr-newsroom-admin-users.webp" alt="Administration: people and roles" loading="lazy"></div><figcaption>Administration: people and roles</figcaption></figure>
+
+<div class="admonition note">
+<p class="admonition-title">Objectives</p>
+<p>After this module you can:
+* Invite people and grant roles with scopes
+* Offboard people
+* Review access</p>
+</div>
+<h3 id="c4-demonstration_20">Demonstration</h3>
+<ol>
+<li>Invite a person, grant a scoped role with an expiry.</li>
+</ol>
+<div class="admonition exercise">
+<p class="admonition-title">Hands-on exercise</p>
+<ol>
+<li>Invite a training user.</li>
+<li>Grant Reporter on one desk and Translator for one language, expiring in a week.</li>
+<li>Check what the user can see.</li>
+<li>Offboard the user and transfer their work.</li>
+</ol>
+</div>
+<div class="admonition quiz">
+<p class="admonition-title">Check your understanding</p>
+<ol>
+<li>What is a scope?</li>
+<li>Why offboard instead of suspend?</li>
+<li>Which roles should require two-step sign-in?</li>
+<li>Where is the list of permissions?</li>
+<li>How often to review access?</li>
+</ol>
+</div>
+<p>Answers are in the Assessment part, module 21.</p>
+<h2 id="c4-module-22-administration-brand-editions-licence-and-integrations"><span class="sn" style="color:var(--accent);margin-right:.45em">4.22</span>Module 22: Administration: brand, editions, licence and integrations</h2>
+<div class="kv"><dt>For</dt><dd>Administrators</dd><dt>Duration</dt><dd>1 h 30 min</dd><dt>Before this</dt><dd>Module 1 and 2</dd></div>
+
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>https://horndaily.example</span></div><img src="../img/nr-newsroom-admin-brand.webp" alt="Administration: brand, editions, licence and integrations" loading="lazy"></div><figcaption>Administration: brand, editions, licence and integrations</figcaption></figure>
+
+<div class="admonition note">
+<p class="admonition-title">Objectives</p>
+<p>After this module you can:
+* Change the brand
+* Open an edition
+* Install a licence
+* Connect an outside service</p>
+</div>
+<h3 id="c4-demonstration_21">Demonstration</h3>
+<ol>
+<li>Change the accent colour and see the website follow.</li>
+</ol>
+<div class="admonition exercise">
+<p class="admonition-title">Hands-on exercise</p>
+<ol>
+<li>Change the tagline and accent colour; check the website.</li>
+<li>Open the Licence page and read the state, limits and check-ins.</li>
+<li>Add a test webhook endpoint and send a test delivery.</li>
+<li>Open Capabilities and see which services each feature needs.</li>
+</ol>
+</div>
+<div class="admonition quiz">
+<p class="admonition-title">Check your understanding</p>
+<ol>
+<li>What happens when you change the brand?</li>
+<li>Where is a licence key installed?</li>
+<li>How are keys of outside services stored?</li>
+<li>How are webhooks signed?</li>
+<li>Are services that send data abroad on by default?</li>
+</ol>
+</div>
+<p>Answers are in the Assessment part, module 22.</p>
+<h2 id="c4-module-23-administration-security-audit-and-backups"><span class="sn" style="color:var(--accent);margin-right:.45em">4.23</span>Module 23: Administration: security, audit and backups</h2>
+<div class="kv"><dt>For</dt><dd>Administrators</dd><dt>Duration</dt><dd>1 h 30 min</dd><dt>Before this</dt><dd>Module 1 and 2</dd></div>
+
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>https://horndaily.example</span></div><img src="../img/nr-newsroom-admin-backups.webp" alt="Administration: security, audit and backups" loading="lazy"></div><figcaption>Administration: security, audit and backups</figcaption></figure>
+
+<div class="admonition note">
+<p class="admonition-title">Objectives</p>
+<p>After this module you can:
+* Use the audit log
+* Make and restore backups with four eyes
+* Run the daily and weekly checks</p>
+</div>
+<h3 id="c4-demonstration_22">Demonstration</h3>
+<ol>
+<li>Request and approve a restore with two administrators.</li>
+</ol>
+<div class="admonition exercise">
+<p class="admonition-title">Hands-on exercise</p>
+<ol>
+<li>Filter the audit log for role grants this week.</li>
+<li>Make a backup now.</li>
+<li>Request a restore to the training environment; a second administrator approves.</li>
+<li>Walk through the daily checklist.</li>
+</ol>
+</div>
+<div class="admonition quiz">
+<p class="admonition-title">Check your understanding</p>
+<ol>
+<li>Why is the audit log tamper-evident?</li>
+<li>How many people does a restore need?</li>
+<li>How often to test a restore?</li>
+<li>What do you do first after a suspected break-in?</li>
+<li>Where are failed jobs seen?</li>
+</ol>
+</div>
+<p>Answers are in the Assessment part, module 23.</p>
+<h2 id="c4-module-24-operations-install-update-and-recover"><span class="sn" style="color:var(--accent);margin-right:.45em">4.24</span>Module 24: Operations: install, update and recover</h2>
+<div class="kv"><dt>For</dt><dd>IT and hosting staff</dd><dt>Duration</dt><dd>3 h 00 min</dd><dt>Before this</dt><dd>Module 1 and 2</dd></div>
+
+<figure class="shot "><div class="win"><div class="bar"><i></i><i></i><i></i><span>https://horndaily.example</span></div><img src="../img/nr-newsroom-admin-health.webp" alt="Operations: install, update and recover" loading="lazy"></div><figcaption>Operations: install, update and recover</figcaption></figure>
+
+<div class="admonition note">
+<p class="admonition-title">Objectives</p>
+<p>After this module you can:
+* Install on Ubuntu 24.04 with one command
+* Update safely
+* Restore from backups on a new server
+* Use the runbooks</p>
+</div>
+<h3 id="c4-demonstration_23">Demonstration</h3>
+<ol>
+<li>
+<p>Install on a fresh server.</p>
+</li>
+<li>
+<p>Restore on a second server.</p>
+</li>
+</ol>
+<div class="admonition exercise">
+<p class="admonition-title">Hands-on exercise</p>
+<ol>
+<li>Install Sham MediaOS on a fresh test server.</li>
+<li>Install a trial licence and sign in.</li>
+<li>Make a backup and copy it off the server.</li>
+<li>Destroy the server, build a new one and restore.</li>
+<li>Time the restore and write the short review.</li>
+</ol>
+</div>
+<div class="admonition quiz">
+<p class="admonition-title">Check your understanding</p>
+<ol>
+<li>Which database is required?</li>
+<li>Recommended launch server?</li>
+<li>What runs scheduled publishing?</li>
+<li>What do you do if an update fails?</li>
+<li>Where are all settings explained?</li>
+</ol>
+</div>
+<p>Answers are in the Assessment part, module 24.</p></section>
+<section class="part" id="p4"><div class="pbar"></div><div class="pnum">Part 4</div><h1>Assessment</h1><div class="pdesc">Answers, certification and forms.</div><div class="plist"><div><span>5</span>Answers, certification and forms</div></div></section>
+<section class="chapter" id="c5"><header class="chap-open"><div class="chap-band"></div><div class="chap-num">Chapter 5</div><h1>Answers, certification and forms</h1><div class=mini><a href="#c5-quiz-answers">5.1&nbsp; Quiz answers<span class="pg" data-t="c5-quiz-answers"></span></a><a href="#c5-practical-certification-tasks">5.2&nbsp; Practical certification tasks<span class="pg" data-t="c5-practical-certification-tasks"></span></a><a href="#c5-certificate">5.3&nbsp; Certificate<span class="pg" data-t="c5-certificate"></span></a><a href="#c5-attendance-sheet">5.4&nbsp; Attendance sheet<span class="pg" data-t="c5-attendance-sheet"></span></a><a href="#c5-training-evaluation-form">5.5&nbsp; Training evaluation form<span class="pg" data-t="c5-training-evaluation-form"></span></a></div></header><h2 id="c5-quiz-answers"><span class="sn" style="color:var(--accent);margin-right:.45em">5.1</span>Quiz answers</h2>
+<h3 id="c5-module-1-welcome-to-sham-mediaos">Module 1: Welcome to Sham MediaOS</h3>
+<ol>
+<li>
+<p><strong>What is an edition?</strong> The whole publication in one language, with its own front page, sections and editors.</p>
+</li>
+<li>
+<p><strong>What happens to the public website if the licence lapses?</strong> It keeps running; only the newsroom becomes read-only.</p>
+</li>
+<li>
+<p><strong>Which page shows what is waiting for you?</strong> My work (and the Command centre).</p>
+</li>
+<li>
+<p><strong>Which keys open the command palette?</strong> Ctrl+K, or Cmd+K on a Mac.</p>
+</li>
+<li><strong>Where are the screenshots in these manuals taken from?</strong> An example outlet called Horn Daily; your system shows your own brand.</li>
+</ol>
+<h3 id="c5-module-2-signing-in-safely">Module 2: Signing in safely</h3>
+<ol>
+<li>
+<p><strong>Why are SMS codes not used for staff sign-in?</strong> SMS can be intercepted or redirected; authenticator apps and passkeys are safer.</p>
+</li>
+<li>
+<p><strong>You lost your phone. What do you use?</strong> A recovery code, then set up two-step sign-in again; tell your administrator.</p>
+</li>
+<li>
+<p><strong>Can you reuse a recovery code?</strong> No, each code works once.</p>
+</li>
+<li>
+<p><strong>An e-mail asks you to sign in through a link to fix your account. What do you do?</strong> Do not use the link; open the newsroom address yourself and report the e-mail to your administrator.</p>
+</li>
+<li><strong>Why are you asked to sign in again before adding a passkey?</strong> Adding a passkey needs a fresh sign-in within the last 15 minutes, to protect your account.</li>
+</ol>
+<h3 id="c5-module-3-planning-and-assignments">Module 3: Planning and assignments</h3>
+<ol>
+<li>
+<p><strong>Where does an assigned story appear for the reporter?</strong> In My work.</p>
+</li>
+<li>
+<p><strong>What should a pitch contain?</strong> A working title, the angle, the desk, the edition, sources and expected media.</p>
+</li>
+<li>
+<p><strong>Who can assign stories?</strong> Desk chiefs and editors with the planning permission.</p>
+</li>
+<li>
+<p><strong>Why link events to pitches?</strong> So the coverage plan and the event stay together and nothing is missed.</p>
+</li>
+<li><strong>Can one pitch target several editions?</strong> Yes.</li>
+</ol>
+<h3 id="c5-module-4-writing-in-story-studio">Module 4: Writing in Story Studio</h3>
+<ol>
+<li>
+<p><strong>What is alternative text for?</strong> It describes the image for people who cannot see it and for search engines.</p>
+</li>
+<li>
+<p><strong>How do you insert a block?</strong> Type / or use the + button.</p>
+</li>
+<li>
+<p><strong>Do you need to press Save?</strong> No, the story saves itself; Ctrl+S saves at once.</p>
+</li>
+<li>
+<p><strong>What does the readiness check do?</strong> Lists what is missing or wrong before submission: red items must be fixed.</p>
+</li>
+<li><strong>Can you get back an earlier version?</strong> Yes, from Versions.</li>
+</ol>
+<h3 id="c5-module-5-media-photos-audio-video-and-documents">Module 5: Media: photos, audio, video and documents</h3>
+<ol>
+<li>
+<p><strong>What happens if the connection drops during a large upload?</strong> The upload continues from where it stopped.</p>
+</li>
+<li>
+<p><strong>Why record rights and expiry?</strong> So expired or limited material is flagged before reuse.</p>
+</li>
+<li>
+<p><strong>Does changing a caption in a story change it in the library?</strong> No, only for that story.</p>
+</li>
+<li>
+<p><strong>What is the focal point for?</strong> Crops keep the important part, such as a face.</p>
+</li>
+<li><strong>Where does material sent by contributors arrive?</strong> In Uploads, for checking.</li>
+</ol>
+<h3 id="c5-module-6-editing-approval-and-publishing">Module 6: Editing, approval and publishing</h3>
+<ol>
+<li>
+<p><strong>Can a reporter change a story while an editor has it?</strong> No, it is locked until it is returned or published.</p>
+</li>
+<li>
+<p><strong>When is the Publish button disabled?</strong> When an approval chain applies and approvals are missing.</p>
+</li>
+<li>
+<p><strong>Can you approve your own story under a chain?</strong> Not when the chain forbids it, which is normal.</p>
+</li>
+<li>
+<p><strong>In which time zone is a scheduled time?</strong> The edition's time zone.</p>
+</li>
+<li><strong>Where are approvals recorded?</strong> In the story history and the audit log.</li>
+</ol>
+<h3 id="c5-module-7-updates-corrections-and-takedowns">Module 7: Updates, corrections and takedowns</h3>
+<ol>
+<li>
+<p><strong>Where do corrections appear?</strong> On the story and on the public corrections page.</p>
+</li>
+<li>
+<p><strong>Should a correction repeat a defamatory claim?</strong> No.</p>
+</li>
+<li>
+<p><strong>Does unpublishing delete the story?</strong> No, it stays in the newsroom with its history.</p>
+</li>
+<li>
+<p><strong>Who is told about a correction?</strong> Readers, and webhooks and partners where set up.</p>
+</li>
+<li><strong>What is the difference between an update and a correction?</strong> An update adds news; a correction fixes an error.</li>
+</ol>
+<h3 id="c5-module-8-languages-translation-and-the-termbase">Module 8: Languages, translation and the termbase</h3>
+<ol>
+<li>
+<p><strong>Is a machine draft publishable as it is?</strong> No, it is a draft until a person changes and approves it.</p>
+</li>
+<li>
+<p><strong>What is the termbase?</strong> Approved spellings of names, places and terms in each language.</p>
+</li>
+<li>
+<p><strong>Should a headline be translated literally?</strong> Not necessarily; adapt it for the edition's readers.</p>
+</li>
+<li>
+<p><strong>Who approves translations?</strong> Edition editors (reviewers).</p>
+</li>
+<li><strong>What happens when a reader opens a page missing in their edition?</strong> They see the English page if it exists, or a clear message.</li>
+</ol>
+<h3 id="c5-module-9-breaking-news-and-live-coverage">Module 9: Breaking news and live coverage</h3>
+<ol>
+<li>
+<p><strong>Which channels can a breaking alert use?</strong> Website banner, app and web push, SMS where set up.</p>
+</li>
+<li>
+<p><strong>Why might an alert wait before sending?</strong> Your outlet requires a second editor to confirm.</p>
+</li>
+<li>
+<p><strong>Do readers need to reload a live page?</strong> No, posts appear by themselves.</p>
+</li>
+<li>
+<p><strong>What are key events?</strong> Important posts listed in the summary.</p>
+</li>
+<li><strong>When should an alert end?</strong> When the news is no longer developing.</li>
+</ol>
+<h3 id="c5-module-10-front-pages-structure-and-seo">Module 10: Front pages, structure and SEO</h3>
+<ol>
+<li>
+<p><strong>Where are front pages arranged?</strong> Front page layouts.</p>
+</li>
+<li>
+<p><strong>What is a topic?</strong> A collection of stories on one subject that readers can follow.</p>
+</li>
+<li>
+<p><strong>Why set a separate search title?</strong> Search engines show about 60 characters; the headline may be longer or less clear.</p>
+</li>
+<li>
+<p><strong>What links editions for search engines?</strong> hreflang links, set automatically.</p>
+</li>
+<li><strong>Where are sections created?</strong> Site structure.</li>
+</ol>
+<h3 id="c5-module-11-newsletters-and-notifications">Module 11: Newsletters and notifications</h3>
+<ol>
+<li>
+<p><strong>Why double opt-in?</strong> Only people who confirmed receive e-mail; it protects deliverability and consent.</p>
+</li>
+<li>
+<p><strong>What happens to hard bounces?</strong> They are suppressed automatically.</p>
+</li>
+<li>
+<p><strong>A good complaint rate is below…?</strong> 0.1 %.</p>
+</li>
+<li>
+<p><strong>Who should receive a push?</strong> Readers who chose the edition or topic; only for news worth interrupting them.</p>
+</li>
+<li><strong>Where are e-mail texts edited?</strong> E-mail templates.</li>
+</ol>
+<h3 id="c5-module-12-social-video-and-podcasts">Module 12: Social, video and podcasts</h3>
+<ol>
+<li>
+<p><strong>Why link social posts to your own site?</strong> Readers can sign up and support you there.</p>
+</li>
+<li>
+<p><strong>What podcast artwork size is required?</strong> At least 1400 × 1400 pixels.</p>
+</li>
+<li>
+<p><strong>Where do podcast platforms read episodes from?</strong> The show's feed.</p>
+</li>
+<li>
+<p><strong>Should AI transcripts be checked?</strong> Yes, especially names and numbers.</p>
+</li>
+<li><strong>Where are clip uploads recorded?</strong> In the Video workspace with their results.</li>
+</ol>
+<h3 id="c5-module-13-audience-interaction-and-moderation">Module 13: Audience interaction and moderation</h3>
+<ol>
+<li>
+<p><strong>Which comments are handled first?</strong> Reported comments.</p>
+</li>
+<li>
+<p><strong>What must a callout explain?</strong> What you are looking for, why, how answers will be used, and consent.</p>
+</li>
+<li>
+<p><strong>Where do callout attachments go for checking?</strong> Uploads.</p>
+</li>
+<li>
+<p><strong>Is a blocked reader recorded?</strong> Yes, with the reason.</p>
+</li>
+<li><strong>Pre- or post-moderation for sensitive stories?</strong> Pre-moderation, or close comments.</li>
+</ol>
+<h3 id="c5-module-14-standards-complaints-and-fact-checks">Module 14: Standards: complaints and fact-checks</h3>
+<ol>
+<li>
+<p><strong>What does a complaint get when it arrives?</strong> A reference and a deadline.</p>
+</li>
+<li>
+<p><strong>Why mark up fact-checks?</strong> So search engines can show the rating.</p>
+</li>
+<li>
+<p><strong>Can a complaint be closed without a reply?</strong> It should be answered and closed with the outcome.</p>
+</li>
+<li>
+<p><strong>Where is the JTI self-assessment?</strong> Administration → Compliance → JTI.</p>
+</li>
+<li><strong>Who should see legal notes?</strong> Only legal counsel and editors involved; they are kept apart from the text.</li>
+</ol>
+<h3 id="c5-module-15-investigations-and-source-protection">Module 15: Investigations and source protection</h3>
+<ol>
+<li>
+<p><strong>Can administrators read every investigation?</strong> No, only members.</p>
+</li>
+<li>
+<p><strong>Is investigation material sent to outside AI services?</strong> Never.</p>
+</li>
+<li>
+<p><strong>Where do source names belong?</strong> In the restricted source notes, never in drafts or chats.</p>
+</li>
+<li>
+<p><strong>Why a neutral code name?</strong> So the name reveals nothing.</p>
+</li>
+<li><strong>How are investigation stories published?</strong> Through the investigation approval chain.</li>
+</ol>
+<h3 id="c5-module-16-elections">Module 16: Elections</h3>
+<ol>
+<li>
+<p><strong>When is an entered result public?</strong> After a second person verifies it.</p>
+</li>
+<li>
+<p><strong>What updates from the same data?</strong> Website, widgets, feeds and broadcast graphics.</p>
+</li>
+<li>
+<p><strong>Why practice results?</strong> To test the night; they must be deleted before polling day.</p>
+</li>
+<li>
+<p><strong>What is shown with results?</strong> Share counted and time of last update.</p>
+</li>
+<li><strong>Which edition includes elections?</strong> Professional and above.</li>
+</ol>
+<h3 id="c5-module-17-broadcast-rundowns-and-studios">Module 17: Broadcast: rundowns and studios</h3>
+<ol>
+<li>
+<p><strong>What does back time show?</strong> When each item must start for the programme to end on time.</p>
+</li>
+<li>
+<p><strong>Does a remote guest install anything?</strong> No, they use a browser link.</p>
+</li>
+<li>
+<p><strong>Where are graphics shown?</strong> On the overlay page used by the mixer or streaming software.</p>
+</li>
+<li>
+<p><strong>Default remote guest gateway?</strong> Self-hosted LiveKit; Jitsi is the alternative.</p>
+</li>
+<li><strong>When should you test a guest?</strong> At least 15 minutes before air.</li>
+</ol>
+<h3 id="c5-module-18-revenue-and-advertising">Module 18: Revenue and advertising</h3>
+<ol>
+<li>
+<p><strong>When is a membership active?</strong> When the provider confirms the payment to the server.</p>
+</li>
+<li>
+<p><strong>Whose merchant account receives payments?</strong> The outlet's own.</p>
+</li>
+<li>
+<p><strong>What ends a campaign?</strong> Its end date or impression goal.</p>
+</li>
+<li>
+<p><strong>How are bank transfers activated?</strong> A staff member records the transfer.</p>
+</li>
+<li><strong>How is sponsored content shown?</strong> With a visible label, optionally approved by the standards editor.</li>
+</ol>
+<h3 id="c5-module-19-analytics">Module 19: Analytics</h3>
+<ol>
+<li>
+<p><strong>Best sign of value?</strong> Reading time and completion.</p>
+</li>
+<li>
+<p><strong>Are third-party trackers used?</strong> No.</p>
+</li>
+<li>
+<p><strong>When should you look at a story's analytics?</strong> The day after publication.</p>
+</li>
+<li>
+<p><strong>What are returning readers?</strong> Readers who came back within the period.</p>
+</li>
+<li><strong>Which edition includes analytics?</strong> Professional and above.</li>
+</ol>
+<h3 id="c5-module-20-the-reporter-app">Module 20: The Reporter app</h3>
+<ol>
+<li>
+<p><strong>Can you write without a connection?</strong> Yes, drafts are sent when you are online again.</p>
+</li>
+<li>
+<p><strong>What happens to a large upload after an app restart?</strong> It continues.</p>
+</li>
+<li>
+<p><strong>What are the conflict choices?</strong> Keep mine, take theirs, save copy.</p>
+</li>
+<li>
+<p><strong>Which languages can the app itself use?</strong> English, Amharic, Afaan Oromoo, Tigrinya, Somali, Arabic.</p>
+</li>
+<li><strong>Does story text follow the app language?</strong> No, it uses the edition's script and direction.</li>
+</ol>
+<h3 id="c5-module-21-administration-people-and-roles">Module 21: Administration: people and roles</h3>
+<ol>
+<li>
+<p><strong>What is a scope?</strong> The part of the organisation a role applies to: bureau, desk, language, section or country.</p>
+</li>
+<li>
+<p><strong>Why offboard instead of suspend?</strong> Offboarding signs out everywhere, removes roles, revokes tokens and transfers work.</p>
+</li>
+<li>
+<p><strong>Which roles should require two-step sign-in?</strong> Every role that can publish, administer or see personal data.</p>
+</li>
+<li>
+<p><strong>Where is the list of permissions?</strong> Roles, and the Roles and permissions reference.</p>
+</li>
+<li><strong>How often to review access?</strong> Monthly.</li>
+</ol>
+<h3 id="c5-module-22-administration-brand-editions-licence-and-integrations">Module 22: Administration: brand, editions, licence and integrations</h3>
+<ol>
+<li>
+<p><strong>What happens when you change the brand?</strong> Website, e-mails and apps follow within minutes.</p>
+</li>
+<li>
+<p><strong>Where is a licence key installed?</strong> Administration → Licence.</p>
+</li>
+<li>
+<p><strong>How are keys of outside services stored?</strong> Encrypted, shown once.</p>
+</li>
+<li>
+<p><strong>How are webhooks signed?</strong> HMAC-SHA256.</p>
+</li>
+<li><strong>Are services that send data abroad on by default?</strong> No.</li>
+</ol>
+<h3 id="c5-module-23-administration-security-audit-and-backups">Module 23: Administration: security, audit and backups</h3>
+<ol>
+<li>
+<p><strong>Why is the audit log tamper-evident?</strong> Each entry carries a hash linking it to the previous one.</p>
+</li>
+<li>
+<p><strong>How many people does a restore need?</strong> Two administrators.</p>
+</li>
+<li>
+<p><strong>How often to test a restore?</strong> Monthly.</p>
+</li>
+<li>
+<p><strong>What do you do first after a suspected break-in?</strong> Keep evidence; do not delete anything.</p>
+</li>
+<li><strong>Where are failed jobs seen?</strong> Operations Center.</li>
+</ol>
+<h3 id="c5-module-24-operations-install-update-and-recover">Module 24: Operations: install, update and recover</h3>
+<ol>
+<li>
+<p><strong>Which database is required?</strong> PostgreSQL 16 or newer (17 in the Docker kit); MySQL is not supported.</p>
+</li>
+<li>
+<p><strong>Recommended launch server?</strong> 8 vCPU, 16 GB memory, 160 GB NVMe, plus off-site backups.</p>
+</li>
+<li>
+<p><strong>What runs scheduled publishing?</strong> The scheduler, every minute.</p>
+</li>
+<li>
+<p><strong>What do you do if an update fails?</strong> Stop, read the first error, roll back the release and restore the pre-update backup.</p>
+</li>
+<li><strong>Where are all settings explained?</strong> Configuration reference in the Installation and Operations Manual.</li>
+</ol>
+<h2 id="c5-practical-certification-tasks"><span class="sn" style="color:var(--accent);margin-right:.45em">5.2</span>Practical certification tasks</h2>
+<p>A trainee completes the task for their path in the training environment, observed by the trainer.</p>
+<table>
+<thead>
+<tr>
+<th>Path</th>
+<th>Task</th>
+<th>Pass when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reporter</td>
+<td>Pitch, write and submit a story with two photos, from pitch to submission in 45 minutes</td>
+<td>Readiness has no red items; captions and alternative text are complete</td>
+</tr>
+<tr>
+<td>Editor</td>
+<td>Edit, query, approve and schedule a reporter's story; publish a correction on another</td>
+<td>Correction appears publicly; schedule correct in edition time</td>
+</tr>
+<tr>
+<td>Translator</td>
+<td>Translate a 400-word story and its headline using the termbase</td>
+<td>Reviewer approves with no term errors</td>
+</tr>
+<tr>
+<td>Audience editor</td>
+<td>Build, test and schedule a newsletter issue; send a push</td>
+<td>Test received; schedule correct</td>
+</tr>
+<tr>
+<td>Producer</td>
+<td>Build and run a five-minute bulletin with one remote guest</td>
+<td>Finishes within 15 seconds of the slot</td>
+</tr>
+<tr>
+<td>Administrator</td>
+<td>Invite and offboard a user; request and approve a restore with a colleague</td>
+<td>Audit log shows both actions</td>
+</tr>
+<tr>
+<td>IT</td>
+<td>Restore the system on a new server from backups</td>
+<td>System works; time recorded</td>
+</tr>
+</tbody>
+</table>
+<h2 id="c5-certificate"><span class="sn" style="color:var(--accent);margin-right:.45em">5.3</span>Certificate</h2>
+<div class="card" style="padding:24px 28px"><h4 style="font-size:16pt">Certificate of training</h4><p style="font-size:11pt;line-height:2">This certifies that ______________________________ completed the Sham MediaOS ______________________ learning path, passed the module quizzes and the practical task on ____ / ____ / ________.</p><p style="font-size:11pt;line-height:2">Trainer: ______________________ Signature: ______________________</p><p style="font-size:11pt;line-height:2">Organisation: ______________________</p></div>
+
+<h2 id="c5-attendance-sheet"><span class="sn" style="color:var(--accent);margin-right:.45em">5.4</span>Attendance sheet</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Name</th>
+<th>Role</th>
+<th>Module(s)</th>
+<th>Quiz score</th>
+<th>Signature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="c5-training-evaluation-form"><span class="sn" style="color:var(--accent);margin-right:.45em">5.5</span>Training evaluation form</h2>
+<p>Rate from 1 (poor) to 5 (excellent).</p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The objectives were clear</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>The demonstrations were easy to follow</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>The exercises matched my daily work</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>I can now do my job in Sham MediaOS</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>The trainer answered my questions</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td>The pace was right</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p>What should we change? ____________________________________________________________</p>
+<hr /></section>
+<section class="chapter" id="bindex"><header class="chap-open"><div class="chap-band"></div><div class="chap-num">Index</div><h1>Index</h1><p class="lead">Every chapter, section and topic in this volume, with its page.</p></header><div class="bindex"><div class="L">A</div><a href="#c3-add-a-passkey-so-you-can-sign-in-without-a-password">Add a passkey so you can sign in without a password<span class="pg" data-t="c3-add-a-passkey-so-you-can-sign-in-without-a-password"></span></a><a href="#c3-add-a-photo-from-the-media-library">Add a photo from the media library<span class="pg" data-t="c3-add-a-photo-from-the-media-library"></span></a><a href="#c3-add-a-term-to-the-termbase">Add a term to the termbase<span class="pg" data-t="c3-add-a-term-to-the-termbase"></span></a><a href="#c3-answer-an-editors-query">Answer an editor&#x27;s query<span class="pg" data-t="c3-answer-an-editors-query"></span></a><a href="#c5">Answers, certification and forms<span class="pg" data-t="c5"></span></a><a href="#c3-assign-a-story">Assign a story<span class="pg" data-t="c3-assign-a-story"></span></a><a href="#c5-attendance-sheet">Attendance sheet<span class="pg" data-t="c5-attendance-sheet"></span></a><a href="#c3-audience-desk">Audience desk<span class="pg" data-t="c3-audience-desk"></span></a><div class="L">B</div><a href="#c3-breaking-and-live-desk">Breaking and live desk<span class="pg" data-t="c3-breaking-and-live-desk"></span></a><div class="L">C</div><a href="#c5-certificate">Certificate<span class="pg" data-t="c5-certificate"></span></a><div class="L">D</div><a href="#c4-demonstration">Demonstration<span class="pg" data-t="c4-demonstration"></span></a><a href="#c4-demonstration_1">Demonstration<span class="pg" data-t="c4-demonstration_1"></span></a><a href="#c4-demonstration_2">Demonstration<span class="pg" data-t="c4-demonstration_2"></span></a><a href="#c4-demonstration_3">Demonstration<span class="pg" data-t="c4-demonstration_3"></span></a><a href="#c4-demonstration_4">Demonstration<span class="pg" data-t="c4-demonstration_4"></span></a><a href="#c4-demonstration_5">Demonstration<span class="pg" data-t="c4-demonstration_5"></span></a><a href="#c4-demonstration_6">Demonstration<span class="pg" data-t="c4-demonstration_6"></span></a><a href="#c4-demonstration_7">Demonstration<span class="pg" data-t="c4-demonstration_7"></span></a><a href="#c4-demonstration_8">Demonstration<span class="pg" data-t="c4-demonstration_8"></span></a><a href="#c4-demonstration_9">Demonstration<span class="pg" data-t="c4-demonstration_9"></span></a><a href="#c4-demonstration_10">Demonstration<span class="pg" data-t="c4-demonstration_10"></span></a><a href="#c4-demonstration_11">Demonstration<span class="pg" data-t="c4-demonstration_11"></span></a><a href="#c4-demonstration_12">Demonstration<span class="pg" data-t="c4-demonstration_12"></span></a><a href="#c4-demonstration_13">Demonstration<span class="pg" data-t="c4-demonstration_13"></span></a><a href="#c4-demonstration_14">Demonstration<span class="pg" data-t="c4-demonstration_14"></span></a><a href="#c4-demonstration_15">Demonstration<span class="pg" data-t="c4-demonstration_15"></span></a><a href="#c4-demonstration_16">Demonstration<span class="pg" data-t="c4-demonstration_16"></span></a><a href="#c4-demonstration_17">Demonstration<span class="pg" data-t="c4-demonstration_17"></span></a><a href="#c4-demonstration_18">Demonstration<span class="pg" data-t="c4-demonstration_18"></span></a><a href="#c4-demonstration_19">Demonstration<span class="pg" data-t="c4-demonstration_19"></span></a><a href="#c4-demonstration_20">Demonstration<span class="pg" data-t="c4-demonstration_20"></span></a><a href="#c4-demonstration_21">Demonstration<span class="pg" data-t="c4-demonstration_21"></span></a><a href="#c4-demonstration_22">Demonstration<span class="pg" data-t="c4-demonstration_22"></span></a><a href="#c4-demonstration_23">Demonstration<span class="pg" data-t="c4-demonstration_23"></span></a><div class="L">E</div><a href="#c3-edit-and-publish-a-story">Edit and publish a story<span class="pg" data-t="c3-edit-and-publish-a-story"></span></a><a href="#c3-editing-desk">Editing desk<span class="pg" data-t="c3-editing-desk"></span></a><a href="#c3-embed-a-social-media-post-or-a-map">Embed a social media post or a map<span class="pg" data-t="c3-embed-a-social-media-post-or-a-map"></span></a><div class="L">F</div><a href="#c3-field-work-the-reporter-app">Field work: the Reporter app<span class="pg" data-t="c3-field-work-the-reporter-app"></span></a><a href="#c3-file-a-story-from-your-phone">File a story from your phone<span class="pg" data-t="c3-file-a-story-from-your-phone"></span></a><a href="#c2-4-first-sign-in-with-two-factor-authentication">First sign-in with two-factor authentication<span class="pg" data-t="c2-4-first-sign-in-with-two-factor-authentication"></span></a><a href="#c1-five-day-roll-out-course">Five-day roll-out course<span class="pg" data-t="c1-five-day-roll-out-course"></span></a><div class="L">H</div><a href="#c3-handle-a-reader-complaint">Handle a reader complaint<span class="pg" data-t="c3-handle-a-reader-complaint"></span></a><a href="#c1-how-the-training-works">How the training works<span class="pg" data-t="c1-how-the-training-works"></span></a><div class="L">I</div><a href="#c2-3-install-in-one-command">Install in one command<span class="pg" data-t="c2-3-install-in-one-command"></span></a><a href="#c2-6-install-your-licence">Install your licence<span class="pg" data-t="c2-6-install-your-licence"></span></a><div class="L">L</div><a href="#c1-learning-paths">Learning paths<span class="pg" data-t="c1-learning-paths"></span></a><div class="L">M</div><a href="#c3-media-desk">Media desk<span class="pg" data-t="c3-media-desk"></span></a><a href="#c3-moderate-comments">Moderate comments<span class="pg" data-t="c3-moderate-comments"></span></a><a href="#c4-module-10-front-pages-structure-and-seo">Module 10: Front pages, structure and SEO<span class="pg" data-t="c4-module-10-front-pages-structure-and-seo"></span></a><a href="#c5-module-10-front-pages-structure-and-seo">Module 10: Front pages, structure and SEO<span class="pg" data-t="c5-module-10-front-pages-structure-and-seo"></span></a><a href="#c4-module-11-newsletters-and-notifications">Module 11: Newsletters and notifications<span class="pg" data-t="c4-module-11-newsletters-and-notifications"></span></a><a href="#c5-module-11-newsletters-and-notifications">Module 11: Newsletters and notifications<span class="pg" data-t="c5-module-11-newsletters-and-notifications"></span></a><a href="#c4-module-12-social-video-and-podcasts">Module 12: Social, video and podcasts<span class="pg" data-t="c4-module-12-social-video-and-podcasts"></span></a><a href="#c5-module-12-social-video-and-podcasts">Module 12: Social, video and podcasts<span class="pg" data-t="c5-module-12-social-video-and-podcasts"></span></a><a href="#c4-module-13-audience-interaction-and-moderation">Module 13: Audience interaction and moderation<span class="pg" data-t="c4-module-13-audience-interaction-and-moderation"></span></a><a href="#c5-module-13-audience-interaction-and-moderation">Module 13: Audience interaction and moderation<span class="pg" data-t="c5-module-13-audience-interaction-and-moderation"></span></a><a href="#c4-module-14-standards-complaints-and-fact-checks">Module 14: Standards: complaints and fact-checks<span class="pg" data-t="c4-module-14-standards-complaints-and-fact-checks"></span></a><a href="#c5-module-14-standards-complaints-and-fact-checks">Module 14: Standards: complaints and fact-checks<span class="pg" data-t="c5-module-14-standards-complaints-and-fact-checks"></span></a><a href="#c4-module-15-investigations-and-source-protection">Module 15: Investigations and source protection<span class="pg" data-t="c4-module-15-investigations-and-source-protection"></span></a><a href="#c5-module-15-investigations-and-source-protection">Module 15: Investigations and source protection<span class="pg" data-t="c5-module-15-investigations-and-source-protection"></span></a><a href="#c4-module-16-elections">Module 16: Elections<span class="pg" data-t="c4-module-16-elections"></span></a><a href="#c5-module-16-elections">Module 16: Elections<span class="pg" data-t="c5-module-16-elections"></span></a><a href="#c4-module-17-broadcast-rundowns-and-studios">Module 17: Broadcast: rundowns and studios<span class="pg" data-t="c4-module-17-broadcast-rundowns-and-studios"></span></a><a href="#c5-module-17-broadcast-rundowns-and-studios">Module 17: Broadcast: rundowns and studios<span class="pg" data-t="c5-module-17-broadcast-rundowns-and-studios"></span></a><a href="#c4-module-18-revenue-and-advertising">Module 18: Revenue and advertising<span class="pg" data-t="c4-module-18-revenue-and-advertising"></span></a><a href="#c5-module-18-revenue-and-advertising">Module 18: Revenue and advertising<span class="pg" data-t="c5-module-18-revenue-and-advertising"></span></a><a href="#c4-module-19-analytics">Module 19: Analytics<span class="pg" data-t="c4-module-19-analytics"></span></a><a href="#c5-module-19-analytics">Module 19: Analytics<span class="pg" data-t="c5-module-19-analytics"></span></a><a href="#c4-module-1-welcome-to-sham-mediaos">Module 1: Welcome to Sham MediaOS<span class="pg" data-t="c4-module-1-welcome-to-sham-mediaos"></span></a><a href="#c5-module-1-welcome-to-sham-mediaos">Module 1: Welcome to Sham MediaOS<span class="pg" data-t="c5-module-1-welcome-to-sham-mediaos"></span></a><a href="#c4-module-20-the-reporter-app">Module 20: The Reporter app<span class="pg" data-t="c4-module-20-the-reporter-app"></span></a><a href="#c5-module-20-the-reporter-app">Module 20: The Reporter app<span class="pg" data-t="c5-module-20-the-reporter-app"></span></a><a href="#c4-module-21-administration-people-and-roles">Module 21: Administration: people and roles<span class="pg" data-t="c4-module-21-administration-people-and-roles"></span></a><a href="#c5-module-21-administration-people-and-roles">Module 21: Administration: people and roles<span class="pg" data-t="c5-module-21-administration-people-and-roles"></span></a><a href="#c4-module-22-administration-brand-editions-licence-and-integrations">Module 22: Administration: brand, editions, licence and integrations<span class="pg" data-t="c4-module-22-administration-brand-editions-licence-and-integrations"></span></a><a href="#c5-module-22-administration-brand-editions-licence-and-integrations">Module 22: Administration: brand, editions, licence and integrations<span class="pg" data-t="c5-module-22-administration-brand-editions-licence-and-integrations"></span></a><a href="#c4-module-23-administration-security-audit-and-backups">Module 23: Administration: security, audit and backups<span class="pg" data-t="c4-module-23-administration-security-audit-and-backups"></span></a><a href="#c5-module-23-administration-security-audit-and-backups">Module 23: Administration: security, audit and backups<span class="pg" data-t="c5-module-23-administration-security-audit-and-backups"></span></a><a href="#c4-module-24-operations-install-update-and-recover">Module 24: Operations: install, update and recover<span class="pg" data-t="c4-module-24-operations-install-update-and-recover"></span></a><a href="#c5-module-24-operations-install-update-and-recover">Module 24: Operations: install, update and recover<span class="pg" data-t="c5-module-24-operations-install-update-and-recover"></span></a><a href="#c4-module-2-signing-in-safely">Module 2: Signing in safely<span class="pg" data-t="c4-module-2-signing-in-safely"></span></a><a href="#c5-module-2-signing-in-safely">Module 2: Signing in safely<span class="pg" data-t="c5-module-2-signing-in-safely"></span></a><a href="#c4-module-3-planning-and-assignments">Module 3: Planning and assignments<span class="pg" data-t="c4-module-3-planning-and-assignments"></span></a><a href="#c5-module-3-planning-and-assignments">Module 3: Planning and assignments<span class="pg" data-t="c5-module-3-planning-and-assignments"></span></a><a href="#c4-module-4-writing-in-story-studio">Module 4: Writing in Story Studio<span class="pg" data-t="c4-module-4-writing-in-story-studio"></span></a><a href="#c5-module-4-writing-in-story-studio">Module 4: Writing in Story Studio<span class="pg" data-t="c5-module-4-writing-in-story-studio"></span></a><a href="#c4-module-5-media-photos-audio-video-and-documents">Module 5: Media: photos, audio, video and documents<span class="pg" data-t="c4-module-5-media-photos-audio-video-and-documents"></span></a><a href="#c5-module-5-media-photos-audio-video-and-documents">Module 5: Media: photos, audio, video and documents<span class="pg" data-t="c5-module-5-media-photos-audio-video-and-documents"></span></a><a href="#c4-module-6-editing-approval-and-publishing">Module 6: Editing, approval and publishing<span class="pg" data-t="c4-module-6-editing-approval-and-publishing"></span></a><a href="#c5-module-6-editing-approval-and-publishing">Module 6: Editing, approval and publishing<span class="pg" data-t="c5-module-6-editing-approval-and-publishing"></span></a><a href="#c4-module-7-updates-corrections-and-takedowns">Module 7: Updates, corrections and takedowns<span class="pg" data-t="c4-module-7-updates-corrections-and-takedowns"></span></a><a href="#c5-module-7-updates-corrections-and-takedowns">Module 7: Updates, corrections and takedowns<span class="pg" data-t="c5-module-7-updates-corrections-and-takedowns"></span></a><a href="#c4-module-8-languages-translation-and-the-termbase">Module 8: Languages, translation and the termbase<span class="pg" data-t="c4-module-8-languages-translation-and-the-termbase"></span></a><a href="#c5-module-8-languages-translation-and-the-termbase">Module 8: Languages, translation and the termbase<span class="pg" data-t="c5-module-8-languages-translation-and-the-termbase"></span></a><a href="#c4-module-9-breaking-news-and-live-coverage">Module 9: Breaking news and live coverage<span class="pg" data-t="c4-module-9-breaking-news-and-live-coverage"></span></a><a href="#c5-module-9-breaking-news-and-live-coverage">Module 9: Breaking news and live coverage<span class="pg" data-t="c5-module-9-breaking-news-and-live-coverage"></span></a><a href="#c4">Modules<span class="pg" data-t="c4"></span></a><div class="L">P</div><a href="#c3-pitch-a-story">Pitch a story<span class="pg" data-t="c3-pitch-a-story"></span></a><a href="#c3-plan-your-day-with-my-work">Plan your day with My work<span class="pg" data-t="c3-plan-your-day-with-my-work"></span></a><a href="#c3-planning-desk">Planning desk<span class="pg" data-t="c3-planning-desk"></span></a><a href="#c5-practical-certification-tasks">Practical certification tasks<span class="pg" data-t="c5-practical-certification-tasks"></span></a><a href="#c3-prepare-a-vertical-clip-for-social-platforms">Prepare a vertical clip for social platforms<span class="pg" data-t="c3-prepare-a-vertical-clip-for-social-platforms"></span></a><a href="#c1-preparing-a-session">Preparing a session<span class="pg" data-t="c1-preparing-a-session"></span></a><a href="#c3-publish-a-callout">Publish a callout<span class="pg" data-t="c3-publish-a-callout"></span></a><a href="#c3-publish-a-correction">Publish a correction<span class="pg" data-t="c3-publish-a-correction"></span></a><a href="#c3-publish-a-fact-check">Publish a fact-check<span class="pg" data-t="c3-publish-a-fact-check"></span></a><a href="#c2-7-publish-a-first-story">Publish a first story<span class="pg" data-t="c2-7-publish-a-first-story"></span></a><a href="#c3-publish-an-update">Publish an update<span class="pg" data-t="c3-publish-an-update"></span></a><a href="#c3-put-an-event-in-the-calendar">Put an event in the calendar<span class="pg" data-t="c3-put-an-event-in-the-calendar"></span></a><div class="L">Q</div><a href="#c1-quick-reference-card-the-newsroom-in-ten-moves">Quick reference card: the newsroom in ten moves<span class="pg" data-t="c1-quick-reference-card-the-newsroom-in-ten-moves"></span></a><a href="#c2">Quick start<span class="pg" data-t="c2"></span></a><a href="#c5-quiz-answers">Quiz answers<span class="pg" data-t="c5-quiz-answers"></span></a><div class="L">R</div><a href="#c3-record-rights-and-expiry-for-agency-material">Record rights and expiry for agency material<span class="pg" data-t="c3-record-rights-and-expiry-for-agency-material"></span></a><a href="#c3-return-a-story-to-the-reporter">Return a story to the reporter<span class="pg" data-t="c3-return-a-story-to-the-reporter"></span></a><a href="#c3-run-a-live-blog">Run a live blog<span class="pg" data-t="c3-run-a-live-blog"></span></a><div class="L">S</div><a href="#c3-schedule-a-story">Schedule a story<span class="pg" data-t="c3-schedule-a-story"></span></a><a href="#c3-send-a-breaking-alert">Send a breaking alert<span class="pg" data-t="c3-send-a-breaking-alert"></span></a><a href="#c3-send-a-newsletter-issue">Send a newsletter issue<span class="pg" data-t="c3-send-a-newsletter-issue"></span></a><a href="#c3-send-a-push-notification">Send a push notification<span class="pg" data-t="c3-send-a-push-notification"></span></a><a href="#c3-send-a-story-to-another-edition">Send a story to another edition<span class="pg" data-t="c3-send-a-story-to-another-edition"></span></a><a href="#c2-5-set-your-brand">Set your brand<span class="pg" data-t="c2-5-set-your-brand"></span></a><a href="#c3-sign-in-for-the-first-time">Sign in for the first time<span class="pg" data-t="c3-sign-in-for-the-first-time"></span></a><a href="#c3-standards-desk">Standards desk<span class="pg" data-t="c3-standards-desk"></span></a><a href="#c3-submit-your-story-for-review">Submit your story for review<span class="pg" data-t="c3-submit-your-story-for-review"></span></a><div class="L">T</div><a href="#c3-take-a-story-down">Take a story down<span class="pg" data-t="c3-take-a-story-down"></span></a><a href="#c3">Task guides for every desk<span class="pg" data-t="c3"></span></a><a href="#c2-2-the-editions">The editions<span class="pg" data-t="c2-2-the-editions"></span></a><a href="#c1">The training programme<span class="pg" data-t="c1"></span></a><a href="#c1-trainer-notes">Trainer notes<span class="pg" data-t="c1-trainer-notes"></span></a><a href="#c5-training-evaluation-form">Training evaluation form<span class="pg" data-t="c5-training-evaluation-form"></span></a><a href="#c3-translate-a-story">Translate a story<span class="pg" data-t="c3-translate-a-story"></span></a><a href="#c3-translation-desk">Translation desk<span class="pg" data-t="c3-translation-desk"></span></a><div class="L">U</div><a href="#c3-upload-a-large-video-from-the-field">Upload a large video from the field<span class="pg" data-t="c3-upload-a-large-video-from-the-field"></span></a><div class="L">W</div><a href="#c2-1-what-sham-mediaos-is">What Sham MediaOS is<span class="pg" data-t="c2-1-what-sham-mediaos-is"></span></a><a href="#c2-8-where-to-go-next">Where to go next<span class="pg" data-t="c2-8-where-to-go-next"></span></a><a href="#c2-who-this-is-for">Who this is for<span class="pg" data-t="c2-who-this-is-for"></span></a><a href="#c3-write-a-story">Write a story<span class="pg" data-t="c3-write-a-story"></span></a><a href="#c3-writing-desk">Writing desk<span class="pg" data-t="c3-writing-desk"></span></a><div class="L">Y</div><a href="#c3-your-account-and-your-day">Your account and your day<span class="pg" data-t="c3-your-account-and-your-day"></span></a></div></section><section class="backcover"><div class="in"><h2>The Sham MediaOS library</h2>
+<p>Sham MediaOS is a newsroom, website, apps and broadcast platform that a news organisation installs on its own server, in its own languages, under its own brand. These volumes cover it from the reader's first visit to the engineer's last database migration.</p>
+<div class="vols"><div><b>01</b>Product Bible <span style="color:#8A919B">— buyers, owners, managers and everyone new to the product</span></div><div><b>02</b>Reader Guide <span style="color:#8A919B">— readers, help-desk staff and audience teams</span></div><div><b>03</b>Newsroom User Manual <span style="color:#8A919B">— reporters, editors and newsroom staff</span></div><div><b>04</b>Advanced User Manual <span style="color:#8A919B">— senior editors, producers, audience and commercial leads</span></div><div><b>05</b>Administrator Manual <span style="color:#8A919B">— system administrators and technical owners</span></div><div><b>06</b>Installation and Operations Manual <span style="color:#8A919B">— IT, hosting and operations staff</span></div><div><b>07</b>Advanced Technical Manual <span style="color:#8A919B">— developers, integrators, architects and security reviewers</span></div><div><b>08</b>Training Manual <span style="color:#8A919B">— trainers, new staff and team leads</span></div><div><b>09</b>FAQ and Troubleshooting <span style="color:#8A919B">— everyone, and the help desk</span></div><div><b>10</b>sham.et Store and Licensing Manual <span style="color:#8A919B">— customers buying licences and Sham operators</span></div><div><b>11</b>Commercial and Legal Pack <span style="color:#8A919B">— buyers, procurement, legal and sales teams</span></div></div></div>
+<div class="bot">Version 2.3.2 · November 2026<br>Sham Software Systems Development General Trading PLC · Addis Ababa, Ethiopia · sham.et<br>Sham MediaOS is a product of Sham Software Systems Development General Trading PLC. Screens show the example outlet “Horn Daily”; your newsroom shows your own name, colour and languages.</div><div class="bar"></div></section></div></body></html>
